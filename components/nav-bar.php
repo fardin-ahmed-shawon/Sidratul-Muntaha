@@ -32,7 +32,7 @@
 										} 
 										?>
 									>
-										<a href="about.php">about us</a>
+										<a href="about.php">About us</a>
 									</li>
 									<li 
 										<?php 
@@ -41,7 +41,7 @@
 										} 
 										?>
 									>
-										<a href="courses.php">courses</a>
+										<a href="activities.php">Activities</a>
 									</li>
 									<li 
 										<?php 
@@ -50,7 +50,7 @@
 										} 
 										?>
 									>
-										<a href="news.php">news</a>
+										<a href="gallery.php">Gallery</a>
 									</li>
 									<li 
 										<?php 
@@ -59,7 +59,25 @@
 										} 
 										?>
 									>
-										<a href="contact.php">contact</a>
+										<a href="contact.php">Contact With Us</a>
+									</li>
+									<li 
+										<?php 
+										if ($current_page == 'blogs.php') {
+											echo 'class="active"';
+										} 
+										?>
+									>
+										<a href="blogs.php">Blogs</a>
+									</li>
+									<li 
+										<?php 
+										if ($current_page == 'blogs.php') {
+											echo 'class="active"';
+										} 
+										?>
+									>
+										<a href="notice.php">Notice</a>
 									</li>
 								</ul>
 								<div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
