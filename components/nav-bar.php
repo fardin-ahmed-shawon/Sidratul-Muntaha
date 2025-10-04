@@ -36,7 +36,7 @@
 									</li>
 									<li 
 										<?php 
-										if ($current_page == 'courses.php') {
+										if ($current_page == 'activities.php') {
 											echo 'class="active"';
 										} 
 										?>
@@ -45,7 +45,7 @@
 									</li>
 									<li 
 										<?php 
-										if ($current_page == 'news.php') {
+										if ($current_page == 'gallery.php') {
 											echo 'class="active"';
 										} 
 										?>
@@ -61,18 +61,10 @@
 									>
 										<a href="contact.php">Contact With Us</a>
 									</li>
+
 									<li 
 										<?php 
-										if ($current_page == 'blogs.php') {
-											echo 'class="active"';
-										} 
-										?>
-									>
-										<a href="blogs.php">Blogs</a>
-									</li>
-									<li 
-										<?php 
-										if ($current_page == 'blogs.php') {
+										if ($current_page == 'notice.php') {
 											echo 'class="active"';
 										} 
 										?>
@@ -80,8 +72,7 @@
 										<a href="notice.php">Notice</a>
 									</li>
 								</ul>
-								<div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
-
+							
 								<!-- Hamburger -->
 
 								<div class="hamburger menu_mm">
