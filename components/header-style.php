@@ -1,8 +1,8 @@
 <style>
-	@charset "utf-8";
-	/* CSS Document */
+@charset "utf-8";
+/* CSS Document */
 
-	/******************************
+/******************************
 
 [Table of Contents]
 
@@ -29,20 +29,16 @@
 
 ******************************/
 
-	/***********
+/***********
 1. Fonts
 ***********/
 
-	@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700,800,900');
 
-	/*********************************
+/*********************************
 2. Body and some general stuff
 *********************************/
-	/* Home page css Start green color change  */
-
-
-
-
+/* Home page css Start green color change  */
 
 
 	p a:hover {
@@ -58,10 +54,6 @@
 		background: #06ec79;
 		color: #FFFFFF;
 	}
-
-	p::selection {}
-
-
 
 	section {
 		display: block;
@@ -268,8 +260,6 @@
 		background: #2c2b31;
 	}
 
-	.header.scrolled .top_bar {}
-
 	.top_bar_container {
 		width: 100%;
 		height: 100%;
@@ -312,7 +302,6 @@
 		margin-right: 33px;
 	}
 
-	.top_bar_login {}
 
 	.top_bar_login ul li {
 		display: inline-block;
@@ -480,11 +469,9 @@
 		cursor: pointer;
 	}
 
-	/*********************************
+/*********************************
 3.5 Hamburger
 *********************************/
-
-	.hamburger_container {}
 
 
 	.hamburger:hover i {
