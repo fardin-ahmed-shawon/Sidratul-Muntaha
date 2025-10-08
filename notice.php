@@ -3,49 +3,7 @@ $current_page = basename($_SERVER['PHP_SELF']); // Get the current page name
 $page_title = 'Contact'; // Set the page title
 ?>
 <?php require './components/header.php'; ?>
-<style>
 
-.card_container{
-    margin: 50px 0;
-    width: 100%;
-    border: 1px dotted blanchedalmond;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 25px;
-    flex-wrap: wrap;
-    cursor: pointer;
-
-}
-.card_container .date{
-    display: flex;
-    flex-direction: column;
-    column-gap: 10px;
-    justify-content: center;
-    align-items: center;
-}
-.card_container .notice_text{
-    display: flex;
-    flex-direction: column;
-    column-gap: 10px;
-}
-.card_container .btn{
-    display: flex;
-    flex-direction: column;
-justify-content: center;
-}
-.card_container .btn button{
-background: #008E48;
-opacity: 0.8;
-color: white;
-font-weight: 600;
-padding:10px 25px;
-border: 0;
-border-radius: 15px;
-}
-
-</style>
 <!--=======================================================================-->
 <!------------------------ Your Content Start From Here --------------------->
 <!--=======================================================================-->
@@ -73,7 +31,8 @@ border-radius: 15px;
 		</div>
 	</div>
 
-<div class="container">
+<div class="notice-page">
+	<div class="container">
 <a href="notice-details.php">
         <div class="card_container">
 <div class="date">
@@ -90,6 +49,7 @@ border-radius: 15px;
 </div>
     </div>
 </a>
+</div>
 </div>
 	</div>
 

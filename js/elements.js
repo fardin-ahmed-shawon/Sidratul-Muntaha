@@ -215,22 +215,22 @@ $(document).ready(function()
 
 	*/
 
-	function initTabs() {
-		if ($('.tab').length) {
-			$('.tab').on('click', function () {
+	function initTabs()
+	{
+		if($('.tab').length)
+		{
+			$('.tab').on('click', function()
+			{
 				$('.tab').removeClass('active');
 				$(this).addClass('active');
 				var clickedIndex = $('.tab').index(this);
-				$('.tab_panel').removeClass('active');
-				$('.tab_panel').eq(clickedIndex).addClass('active');
+
+				var panels = $('.tab_panel');
+				panels.removeClass('active');
+				$(panels[clickedIndex]).addClass('active');
 			});
 		}
 	}
-
-	$(document).ready(function () {
-		initTabs();
-	});
-
 
 	/* 
 

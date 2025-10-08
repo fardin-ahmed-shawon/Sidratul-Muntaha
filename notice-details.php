@@ -35,7 +35,8 @@ $page_title = 'Contact'; // Set the page title
 		</div>
 	</div>
 
-<div class="container my-5">
+<div class="notice">
+    <div class="container my-5">
 <div class="d-flex justify-content-between">
     <h6 class="mt-3">August 23, 2025</h6>
     <button class="notice-btn">Notice</button>
@@ -89,6 +90,7 @@ $page_title = 'Contact'; // Set the page title
 </div>
 </div>
 
+</div>
 </div>
 	</div>
 

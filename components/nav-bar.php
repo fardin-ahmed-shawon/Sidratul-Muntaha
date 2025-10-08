@@ -3,7 +3,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<div class="header_content d-flex flex-row align-items-center justify-content-start">
+						<div class="header_content d-flex flex-col align-items-center justify-content-between">
 							<div class="logo_container">
 								<a href="index.php">
 									<div class="logo_content">
@@ -14,7 +14,7 @@
 									</div>
 								</a>
 							</div>
-							<nav class="main_nav_contaner ml-auto">
+							<nav class="main_nav_container ">
 								<ul class="main_nav">
 									<li 
 										<?php 
@@ -72,7 +72,8 @@
 										<a href="notice.php">Notice</a>
 									</li>
 								</ul>
-							
+			
+
 								<!-- Hamburger -->
 
 								<div class="hamburger menu_mm">
@@ -80,6 +81,17 @@
 								</div>
 							</nav>
 
+		<!-- Language Toggle -->
+<div class="d-none d-lg-flex">
+	<div class="language-toggle mx-2">
+  <button id="lang-toggle" class="lang-btn active border-0" data-lang="bn">বাংলা</button>
+  <button id="lang-toggle" class="lang-btn border-0" data-lang="en">EN</button>
+</div>
+					
+<div class="donate-btn-section">
+	<a href="donate.php" class="nav-donate-btn">Donate</a>
+</div>
+</div>
 						</div>
 					</div>
 				</div>

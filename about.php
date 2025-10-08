@@ -3,13 +3,21 @@ $current_page = basename($_SERVER['PHP_SELF']); // Get the current page name
 $page_title = 'Contact'; // Set the page title
 ?>
 <?php require './components/header.php'; ?>
-
+<style>
+	@media(max-width:575px) {
+		.parallax-window {
+			min-height: 290px;
+			background: transparent;
+		}
+	}
+</style>
 <!--=======================================================================-->
 <!------------------------ Your Content Start From Here --------------------->
 <!--=======================================================================-->
 
 <!-- Home -->
-<div class="home">
+<div class="about-home">
+	<div class="home">
 	<div class="home_background parallax_background parallax-window" data-parallax="scroll" data-image-src="images/about.jpg" data-speed="0.8"></div>
 	<div class="home_container">
 		<div class="container">
@@ -29,6 +37,7 @@ $page_title = 'Contact'; // Set the page title
 		</div>
 	</div>
 </div>
+</div>
 
 <div class="container my-5">
 	<!-- About -->
@@ -36,9 +45,7 @@ $page_title = 'Contact'; // Set the page title
 		<div class="container">
 
 			<div class="row">
-				<div class="col-lg-6">
-					<div class="about_image"><img src="images/about_1.jpg" alt=""></div>
-				</div>
+
 				<div class="col-lg-6 mt-3">
 					<div class="about_content">
 						<h3>Our Platform's main goal</h3>
@@ -47,7 +54,11 @@ $page_title = 'Contact'; // Set the page title
 						</div>
 					</div>
 				</div>
+				<div class="col-lg-6">
+					<div class="about_image"><img src="images/about_1.jpg" alt=""></div>
+				</div>
 			</div>
+
 
 			<div class="section_title text-center mt-5">
 				<h2>Goals and Objectives</h2>

@@ -4,21 +4,15 @@ $page_title = 'Home'; // Set the page title
 ?>
 <?php require './components/header.php'; ?>
 <style>
-	.home {
-		width: 100%;
-		height: 100vh;
-	}
-
-	@media (max-width:768px) {
-		.home {
-			height: 64vh
+	@media(max-width:575px) {
+		.home_container {
+			bottom: 145px;
 		}
 	}
 </style>
 <!--=======================================================================-->
 <!------------------------ Your Content Start From Here --------------------->
 <!--=======================================================================-->
-
 
 <!-- Home -->
 <div class="home">
@@ -30,7 +24,7 @@ $page_title = 'Home'; // Set the page title
 			<!-- Slider Item -->
 			<div class="owl-item">
 				<!-- Background image artist https://unsplash.com/@benwhitephotography -->
-				<div class="home_slider_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/Banner3.jpg);background-repeat:no-repeat;background-position:center;"></div>
+				<div class="home_slider_background" style="background-image: linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.5)),url(images/Banner.jpg);background-repeat:no-repeat;background-position:center;"></div>
 				<div class="home_container">
 					<div class="container">
 						<div class="row">
@@ -55,7 +49,7 @@ $page_title = 'Home'; // Set the page title
 			<!-- Slider Item -->
 			<div class="owl-item">
 				<!-- Background image artist https://unsplash.com/@benwhitephotography -->
-				<div class="home_slider_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/Banner.jpg);background-repeat:no-repeat;background-position:center;"></div>
+				<div class="home_slider_background" style="background-image: linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.5)),url(images/Banner2.jpg);background-repeat:no-repeat;background-position:center;"></div>
 				<div class="home_container">
 					<div class="container">
 						<div class="row">
@@ -80,7 +74,7 @@ $page_title = 'Home'; // Set the page title
 			<!-- Slider Item -->
 			<div class="owl-item">
 				<!-- Background image artist https://unsplash.com/@benwhitephotography -->
-				<div class="home_slider_background" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/Bannertwo.jpg)"></div>
+				<div class="home_slider_background" style="background-image:linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.5)),url(images/Banner3.jpg)"></div>
 				<div class="home_container">
 					<div class="container">
 						<div class="row">
@@ -93,30 +87,6 @@ $page_title = 'Home'; // Set the page title
 									</div>
 									<div class="home_buttons">
 										<div class="button home_button"><a href="activities-details.php">Know more<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
-										<div class="button home_button"><a href="activities.php">All Activities<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Slider Item -->
-			<div class="owl-item">
-				<!-- Background image artist https://unsplash.com/@benwhitephotography -->
-				<div class="home_slider_background" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/bannerfour.jpg)"></div>
-				<div class="home_container">
-					<div class="container">
-						<div class="row">
-							<div class="col">
-								<div class="home_content text-center">
-
-									<div class="home_text">
-										<div class="home_title">Sidratul Muntaha Foundation</div>
-										<div class="home_subtitle">Sidratul Muntaha Foundation is a non-political, non-profit government-registered organization dedicated to education, da'wah and total human welfare. Registration Number: .</div>
-									</div>
-									<div class="home_buttons">
-										<div class="button home_button"><a href="activities-details">Know more<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
 										<div class="button home_button"><a href="activities.php">All Activities<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
 									</div>
 								</div>
@@ -131,11 +101,11 @@ $page_title = 'Home'; // Set the page title
 </div>
 
 <!-- Featured Course -->
-<div class="featured">
+<div class="featured my-5">
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<!-- Home Slider Nav -->
+
 				<div class="home_slider_nav_container d-flex flex-row align-items-start justify-content-between">
 					<div class="home_slider_nav home_slider_prev trans_200"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
 					<div class="home_slider_nav home_slider_next trans_200"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
@@ -159,7 +129,7 @@ $page_title = 'Home'; // Set the page title
 							</div>
 						</div>
 						<div class="col-lg-6 featured_col">
-							<!-- Background image artist https://unsplash.com/@jtylernix -->
+
 							<div class="featured_background" style="background-image:url(images/belowBanner.jpg)"></div>
 						</div>
 					</div>
@@ -172,52 +142,22 @@ $page_title = 'Home'; // Set the page title
 <!-- Courses -->
 <div class="courses">
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-10 offset-lg-1">
+		<div class="row donate-form-bg">
+			<div class="col-lg-10 offset-lg-1 ">
 				<div class="section_title text-center">
 					<h2>Make Your Donation</h2>
 				</div>
 				<div class="section_subtitle">Planting Tree is Sadaqah Jariyah.As Long as animals and other people benifite from the tree ,the one wo planted it will continue to earn ...</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col d-flex justify-content-center">
-				<form
-					action="#"
-					class="course_search_form row g-2 justify-content-center align-items-center"
-					style=" width: 100%;">
-					<!-- Donation Fund -->
-					<div class="col-12 col-lg-3">
-						<input
-							type="text"
-							class="form-control course_input"
-							placeholder="Donation Fund"
-							required />
-					</div>
-
-					<!-- Phone/Email -->
-					<div class="col-12 col-lg-3">
-						<input
-							type="text"
-							class="form-control course_input"
-							placeholder="Phone / Email"
-							required />
-					</div>
-
-					<!-- Donation Amount -->
-					<div class="col-12 col-lg-3">
-						<input
-							type="text"
-							class="form-control course_input"
-							placeholder="Donation Amount"
-							required />
-					</div>
-
-					<!-- Button -->
-					<div class="col-12 col-lg-3">
+			<div class="col">
+				<div class="">
+					<form action="#" class="course_search_form d-flex flex-md-row gap-2 flex-column align-items-start justify-content-between">
+						<div><input type="text" class="course_input" placeholder="Donation Fund" required="required"></div>
+						<div><input type="text" class="course_input" placeholder="Phone/ Email" required="required"></div>
+						<div><input type="text" class="course_input" placeholder="Donation Ammount" required="required"></div>
 						<button class="course_button"><span>Donate</span><span class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
-					</div>
-				</form>
+					</form>
+				</div>
 			</div>
 		</div>
 
@@ -235,16 +175,16 @@ $page_title = 'Home'; // Set the page title
 						<!-- Slider Item -->
 						<div class="owl-item">
 							<div class="course">
-								<div class="course_image"><img src="images/Financial Support For Madrasha Students.jpeg" alt=""></div>
+								<div class="course_image"><img src="images/tree-plantation.webp" alt=""></div>
 								<div class="course_body">
 									<div class="course_header d-flex flex-row align-items-center justify-content-start">
-										<div class="course_tag"><a href="activities.php">Activities</a></div>
+										<div class="course_tag"><a href="#">Activities</a></div>
 
 									</div>
 									<div class="course_title">
-										<h3><a href="activities-details.php" class="truncated-title">Financial Support For Madrasha Students</a></h3>
+										<h3><a href="courses.html">Tree Plantation</a></h3>
 									</div>
-									<div class="course_text" class=""> Supporting Madrasa students financially is a noble deed that aids their education and spiritual growth.</div>
+									<div class="course_text">Planting Tree is Sadaqah Jariyah.As Long as animals and other people benifite from the tree ,the one wo planted it will continue to earn ... </div>
 									<div class="course_footer d-flex align-items-center justify-content-start">
 										<!-- <div class="course_author_image"><img src="images/featured_author.jpg" alt="https://unsplash.com/@anthonytran"></div>
 											<div class="course_author_name">By <a href="#">James S. Morrison</a></div>
@@ -257,16 +197,16 @@ $page_title = 'Home'; // Set the page title
 						<!-- Slider Item -->
 						<div class="owl-item">
 							<div class="course">
-								<div class="course_image"><img src="images/WhatsApp Image 2025-09-26 at 2.30.29 AM (8).jpeg" alt=""></div>
+								<div class="course_image"><img src="images/self-reliance.webp" alt=""></div>
 								<div class="course_body">
 									<div class="course_header d-flex flex-row align-items-center justify-content-start">
 										<div class="course_tag"><a href="#">New</a></div>
 
 									</div>
 									<div class="course_title">
-										<h3><a href="activities-details.php">Providing Relief</a></h3>
+										<h3><a href="courses.html">General Fund</a></h3>
 									</div>
-									<div class="course_text turncated-text"> Providing Relief For the People with Financial struggles to make a better society </div>
+									<div class="course_text">Planting Tree is Sadaqah Jariyah.As Long as animals and other people benifite from the tree ,the one wo planted it will continue to earn ...</div>
 									<div class="course_footer d-flex align-items-center justify-content-start">
 										<!-- <div class="course_author_image"><img src="images/course_author_2.jpg" alt=""></div>
 											<div class="course_author_name">By <a href="#">Mark Smith</a></div>
@@ -279,16 +219,16 @@ $page_title = 'Home'; // Set the page title
 						<!-- Slider Item -->
 						<div class="owl-item">
 							<div class="course">
-								<div class="course_image"><img src="images/WhatsApp Image 2025-09-26 at 3.03.23 AM.jpeg" alt=""></div>
+								<div class="course_image"><img src="images/dawah-education.webp" alt="https://unsplash.com/@annademy"></div>
 								<div class="course_body">
 									<div class="course_header d-flex flex-row align-items-center justify-content-start">
 										<div class="course_tag"><a href="#">Featured</a></div>
 
 									</div>
 									<div class="course_title">
-										<h3><a href="activities-details.php">Dawah</a></h3>
+										<h3><a href="courses.html">Dawah</a></h3>
 									</div>
-									<div class="course_text">Dawah program to enlighten about Islam that , Its the way of life For Everyone</div>
+									<div class="course_text">Planting Tree is Sadaqah Jariyah.As Long as animals and other people benifite from the tree ,the one wo planted it will continue to earn ...</div>
 									<div class="course_footer d-flex align-items-center justify-content-start">
 										<!-- <div class="course_author_image"><img src="images/course_author_3.jpg" alt=""></div>
 											<div class="course_author_name">By <a href="#">Julia Williams</a></div>
@@ -311,13 +251,13 @@ $page_title = 'Home'; // Set the page title
 </div>
 
 <!-- Milestones -->
-<!-- <div class="milestones ">
+<!-- <div class="milestones">
 	
 	<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/milestones.jpg" data-speed="0.8"></div>
 	<div class="container">
 		<div class="row milestones_container">
 
-	
+
 			<div class="col-lg-3 milestone_col">
 				<div class="milestone text-center">
 					<div class="milestone_icon"><img src="images/milestone_1.svg" alt=""></div>
@@ -326,7 +266,7 @@ $page_title = 'Home'; // Set the page title
 				</div>
 			</div>
 
-		
+	
 			<div class="col-lg-3 milestone_col">
 				<div class="milestone text-center">
 					<div class="milestone_icon"><img src="images/milestone_2.svg" alt=""></div>
@@ -335,7 +275,7 @@ $page_title = 'Home'; // Set the page title
 				</div>
 			</div>
 
-		
+
 			<div class="col-lg-3 milestone_col">
 				<div class="milestone text-center">
 					<div class="milestone_icon"><img src="images/milestone_3.svg" alt=""></div>
@@ -357,84 +297,7 @@ $page_title = 'Home'; // Set the page title
 	</div>
 </div> -->
 
-
-
-<!-- Video -->
-<div class="video">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<div class="video_container_outer">
-					<div class="video_container">
-						<!-- Video poster image artist: https://unsplash.com/@annademy -->
-						<!-- <video id="vid1" class="video-js vjs-default-skin" controls data-setup='{ "poster": "images/video.jpg", "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=wShlz3zKWHo"}], "youtube": { "iv_load_policy": 1 } }'>
-							</video> -->
-						<iframe width="100%" height="100%"
-							src="https://www.youtube.com/embed/Ki_8YzLoUv8"
-
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen>
-						</iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Photos -->
-<div class="photos">
-	<div class="container py-5">
-		<h1 class="text-center py-2">Photos</h1>
-		<div class="row pt-3">
-			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
-				<a href="images/WhatsApp Image 2025-09-27 at 3.10.53 PM.jpeg" data-lightbox="roadtrip">
-					<img src="images/WhatsApp Image 2025-09-27 at 3.10.53 PM.jpeg" alt="" class="img-fluid">
-				</a>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
-				<a href="images/WhatsApp Image 2025-09-27 at 3.10.57 PM.jpeg" data-lightbox="roadtrip">
-					<img src="images/WhatsApp Image 2025-09-27 at 3.10.57 PM.jpeg" alt="" class="img-fluid">
-				</a>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
-				<a href="images/WhatsApp Image 2025-09-27 at 3.10.57 PM.jpeg" data-lightbox="roadtrip">
-					<img src="images/WhatsApp Image 2025-09-27 at 3.10.57 PM.jpeg" alt="" class="img-fluid">
-				</a>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
-				<a href="images/photos4.webp" data-lightbox="roadtrip">
-					<img src="images/photos4.webp" alt="" class="img-fluid">
-				</a>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
-				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (5).jpeg" data-lightbox="roadtrip">
-					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (5).jpeg" alt="" class="img-fluid">
-				</a>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
-				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM.jpeg" data-lightbox="roadtrip">
-					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM.jpeg" alt="" class="img-fluid">
-				</a>
-			</div>
-		</div>
-
-		<a href="gallery.php">
-			<div class="d-flex justify-content-center mt-4">
-				<button class="course_button">
-					<span>See More</span>
-					<span class="button_arrow">
-						<i class="fa fa-angle-right" aria-hidden="true"></i>
-					</span>
-				</button>
-			</div>
-		</a>
-	</div>
-</div>
-
-
-</div>
-</div>
-<!-- Why choose -->
+<!-- Sections -->
 <div class="grouped_sections">
 	<div class="container">
 		<div class="row">
@@ -444,7 +307,6 @@ $page_title = 'Home'; // Set the page title
 			<div class="col-lg-4 grouped_col">
 				<div class="grouped_title">Why Choose Us?</div>
 				<div class="accordions">
-
 					<div class="accordion_container">
 						<div class="accordion d-flex flex-row align-items-center active">
 							<div>Mauris vehicula nisi congue?</div>
@@ -493,13 +355,13 @@ $page_title = 'Home'; // Set the page title
 
 			</div>
 
-			<!-- Events -->
+			<!-- Notices -->
 
 			<div class="col-lg-4 grouped_col">
-				<div class="grouped_title">Upcoming Events</div>
+				<div class="grouped_title">Latest Notices</div>
 				<div class="events">
 
-					<!-- Event -->
+					<!-- Notice -->
 					<div class="event d-flex flex-row align-items-start justify-content-start">
 						<div>
 							<div class="event_date d-flex flex-column align-items-center justify-content-center">
@@ -508,12 +370,12 @@ $page_title = 'Home'; // Set the page title
 							</div>
 						</div>
 						<div class="event_body">
-							<div class="event_title"><a href="#">New Marketing Course Release</a></div>
+							<div class="event_title"><a href="notice-details.php">New Marketing Course Release</a></div>
 							<div class="event_subtitle">Location: Online Platform</div>
 						</div>
 					</div>
 
-					<!-- Event -->
+					<!-- Notice -->
 					<div class="event d-flex flex-row align-items-start justify-content-start">
 						<div>
 							<div class="event_date d-flex flex-column align-items-center justify-content-center">
@@ -522,12 +384,12 @@ $page_title = 'Home'; // Set the page title
 							</div>
 						</div>
 						<div class="event_body">
-							<div class="event_title"><a href="#">Students Art Workshop</a></div>
+							<div class="event_title"><a href="notice-details.php">Students Art Workshop</a></div>
 							<div class="event_subtitle">Location: Online Platform</div>
 						</div>
 					</div>
 
-					<!-- Event -->
+					<!-- Notice -->
 					<div class="event d-flex flex-row align-items-start justify-content-start">
 						<div>
 							<div class="event_date d-flex flex-column align-items-center justify-content-center">
@@ -536,12 +398,12 @@ $page_title = 'Home'; // Set the page title
 							</div>
 						</div>
 						<div class="event_body">
-							<div class="event_title"><a href="#">Launch Party for a new Platform</a></div>
+							<div class="event_title"><a href="notice-details.php">Launch Party for a new Platform</a></div>
 							<div class="event_subtitle">Location: Online Platform</div>
 						</div>
 					</div>
 
-					<!-- Event -->
+					<!-- Notice -->
 					<div class="event d-flex flex-row align-items-start justify-content-start">
 						<div>
 							<div class="event_date d-flex flex-column align-items-center justify-content-center">
@@ -550,12 +412,12 @@ $page_title = 'Home'; // Set the page title
 							</div>
 						</div>
 						<div class="event_body">
-							<div class="event_title"><a href="#">New Marketing Course</a></div>
+							<div class="event_title"><a href="notice-details.php">New Marketing Course</a></div>
 							<div class="event_subtitle">Location: Online Platform</div>
 						</div>
 					</div>
 
-					<!-- Event -->
+					<!-- Notice -->
 					<div class="event d-flex flex-row align-items-start justify-content-start">
 						<div>
 							<div class="event_date d-flex flex-column align-items-center justify-content-center">
@@ -564,7 +426,7 @@ $page_title = 'Home'; // Set the page title
 							</div>
 						</div>
 						<div class="event_body">
-							<div class="event_title"><a href="#">New Marketing Course</a></div>
+							<div class="event_title"><a href="notice-details.php">New Marketing Course</a></div>
 							<div class="event_subtitle">Location: Online Platform</div>
 						</div>
 					</div>
@@ -572,21 +434,21 @@ $page_title = 'Home'; // Set the page title
 				</div>
 			</div>
 
-			<!-- News -->
+			<!-- Activities -->
 
 			<div class="col-lg-4 grouped_col">
-				<div class="grouped_title">Latest News</div>
+				<div class="grouped_title">Upcoming Activities</div>
 				<div class="news">
 
-					<!-- News Post -->
+					<!-- Activity -->
 					<div class="news_post d-flex flex-row align-items-start justify-content-start">
 						<div>
-							<div class="news_post_image"><img src="images/choose1.jpg" alt="https://unsplash.com/@beccatapert"></div>
+							<div class="news_post_image"><img src="images/news_1.jpg" alt="https://unsplash.com/@beccatapert"></div>
 						</div>
 						<div class="news_post_body">
 							<div class="news_post_date">April 02, 2018</div>
-							<div class="news_post_title"><a href="news.html">Why Choose Islam?</a></div>
-							<div class="news_post_author">By <a href="#">By Mr A</a></div>
+							<div class="news_post_title"><a href="activities-details.php">Why Choose online education?</a></div>
+							<div class="news_post_author text-elipsis">description</div>
 						</div>
 					</div>
 
@@ -597,8 +459,10 @@ $page_title = 'Home'; // Set the page title
 						</div>
 						<div class="news_post_body">
 							<div class="news_post_date">April 02, 2018</div>
-							<div class="news_post_title"><a href="news.html">Why choose Sidratul Muntaha?</a></div>
-							<div class="news_post_author">By <a href="#">By MR B</a></div>
+							<div class="news_post_title"><a href="activities-details.php">Why Choose online education?</a></div>
+							<div class="news_post_author text-elipsis">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid veniam officia accusamus, voluptatem blanditiis eius, rerum omnis expedita minus saepe temporibus, obcaecati esse recusandae laudantium facilis dignissimos pariatur hic commodi!60
+
+							</div>
 						</div>
 					</div>
 
@@ -609,8 +473,8 @@ $page_title = 'Home'; // Set the page title
 						</div>
 						<div class="news_post_body">
 							<div class="news_post_date">April 02, 2018</div>
-							<div class="news_post_title"><a href="news.html">Why Choose Donating?</a></div>
-							<div class="news_post_author">By <a href="#"> By MR B</a></div>
+							<div class="news_post_title"><a href="activities-details.php">Why Choose online education?</a></div>
+							<div class="news_post_author text-elipsis">description</div>
 						</div>
 					</div>
 
@@ -621,13 +485,78 @@ $page_title = 'Home'; // Set the page title
 						</div>
 						<div class="news_post_body">
 							<div class="news_post_date">April 02, 2018</div>
-							<div class="news_post_title"><a href="news.html">Benifit of Helping People</a></div>
-							<div class="news_post_author">By <a href="#">By MR A</a></div>
+							<div class="news_post_title"><a href="activities-details.php">Why Choose online education?</a></div>
+							<div class="news_post_author text-elipsis">description</div>
 						</div>
 					</div>
 
 				</div>
 			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Video -->
+<div class="video">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="video_container_outer">
+					<div class="video_container">
+						<!-- Video poster image artist: https://unsplash.com/@annademy -->
+						<!-- <video id="vid1" class="video-js vjs-default-skin" controls data-setup='{ "poster": "images/video.jpg", "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=wShlz3zKWHo"}], "youtube": { "iv_load_policy": 1 } }'>
+							</video> -->
+						<iframe width="100%" height="100%"
+							src="https://www.youtube.com/embed/Ki_8YzLoUv8"
+
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen>
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Photos   -->
+<div class="photos">
+	<div class="container py-5">
+		<h1 class="text-center py-2">Photos</h1>
+		<div class="row pt-3 ">
+
+			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
+				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (7).jpeg" data-lightbox="news-gallery">
+					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (7).jpeg" alt="" class="img-fluid ">
+				</a>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
+				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (2).jpeg" data-lightbox="news-gallery">
+					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (2).jpeg" alt="" class="img-fluid ">
+				</a>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
+				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (3).jpeg" data-lightbox="news-gallery">
+					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (3).jpeg" alt="" class="img-fluid ">
+				</a>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
+				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (4).jpeg" data-lightbox="news-gallery">
+					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (4).jpeg" alt="" class="img-fluid ">
+				</a>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
+				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (5).jpeg" data-lightbox="news-gallery">
+					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (5).jpeg" alt="" class="img-fluid ">
+				</a>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
+				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (8).jpeg" data-lightbox="news-gallery">
+					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (8).jpeg" alt="images/whats" class="img-fluid ">
+				</a>
+			</div>
+		</div>
+		<div class="d-flex justify-content-center mt-4">
+			<button class="course_button "><a href="gallery.php"><span>See More</span><span class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a></button>
 		</div>
 	</div>
 </div>

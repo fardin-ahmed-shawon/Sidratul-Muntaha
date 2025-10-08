@@ -3,7 +3,12 @@ $current_page = basename($_SERVER['PHP_SELF']); // Get the current page name
 $page_title = 'Gallery'; // Set the page title
 ?>
 <?php require './components/header.php'; ?>
-
+<style>
+.parallax-window {
+    min-height: 308px;
+    background: transparent;
+}
+</style>
 <!--=======================================================================-->
 <!------------------------ Your Content Start From Here --------------------->
 
@@ -32,13 +37,14 @@ $page_title = 'Gallery'; // Set the page title
 
 <!-- Photos Section -->
 <div class="photos">
-    <div class="container py-5">
+    <div class="container py-5 mt-5">
 
-        <div class="row pt-3">
+        <div class="row pt-3 mt-5">
             <?php
             // Array of photos
             $photos = [
-                "images/WhatsApp Image 2025-09-26 at 2.28.54 AM (1).jpeg",
+				"images/gallery one.jpeg",
+                "images/WhatsApp Image 2025-09-26 at 2.40.42 AM.jpeg",
                 "images/WhatsApp Image 2025-09-26 at 2.28.54 AM (2).jpeg",
                 "images/WhatsApp Image 2025-09-26 at 2.28.54 AM (3).jpeg",
                 "images/WhatsApp Image 2025-09-26 at 2.28.54 AM (4).jpeg",
@@ -46,15 +52,13 @@ $page_title = 'Gallery'; // Set the page title
                 "images/WhatsApp Image 2025-09-26 at 2.28.54 AM (6).jpeg",
                 "images/WhatsApp Image 2025-09-26 at 2.28.54 AM (7).jpeg",
                 "images/WhatsApp Image 2025-09-26 at 2.28.54 AM (8).jpeg",
-                "images/WhatsApp Image 2025-09-26 at 2.30.27 AM.jpeg",
-               "images/WhatsApp Image 2025-09-26 at 2.30.29 AM (1).jpeg",            
-                "images/WhatsApp Image 2025-09-27 at 2.45.23 PM.jpeg",
+                "images/WhatsApp Image 2025-09-26 at 2.30.27 AM.jpeg",           
                 "images/WhatsApp Image 2025-09-26 at 2.30.29 AM (2).jpeg",
                 "images/WhatsApp Image 2025-09-26 at 2.30.29 AM (3).jpeg",
                 "images/WhatsApp Image 2025-09-26 at 2.30.29 AM (4).jpeg",
                 "images/WhatsApp Image 2025-09-26 at 2.30.29 AM (5).jpeg",
                 "images/WhatsApp Image 2025-09-26 at 2.30.29 AM (6).jpeg",
-                "images/WhatsApp Image 2025-09-26 at 2.30.29 AM (7).jpeg",
+				"images/WhatsApp Image 2025-09-26 at 2.30.29 AM.jpeg",
             ];
 
             foreach ($photos as $photo) {
@@ -70,9 +74,7 @@ $page_title = 'Gallery'; // Set the page title
     </div>
 </div>
 
-<!-- Lightbox2 CSS and JS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
 
 <!--========================================================================-->
 <!---------------------------- Your Content End Here ------------------------->

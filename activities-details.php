@@ -3,32 +3,44 @@ $current_page = basename($_SERVER['PHP_SELF']); // Get the current page name
 $page_title = 'Blank'; // Set the page title
 ?>
 <?php require './components/header.php'; ?>
-
+<style>
+	.parallax-window {
+    min-height: 308px;
+    background: transparent;
+}
+</style>
 <!--=======================================================================-->
 <!------------------------ Your Content Start From Here --------------------->
 <!--=======================================================================-->
 
 
 <!-- Home -->
+
 <div class="home">
-	<!-- Background image artist https://unsplash.com/@thepootphotographer -->
 	<div class="home_background parallax_background parallax-window" data-parallax="scroll" data-image-src="images/about.jpg" data-speed="0.8"></div>
 	<div class="home_container">
 		<div class="container">
 			<div class="row">
 				<div class="col">
 					<div class="home_content text-center">
-						<div class="home_title">Title</div>
+						<div class="home_title">Activity</div>
+						<div class="breadcrumbs">
+							<ul>
+								<li><a href="index.php">Home</a></li>
+								<li>Activity</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
 <!-- Program details start  -->
-<div class="container my-5 py-5">
-	<div class="row mt-5">
-		<div class="col-md-12 col-lg-6">
+<div class="container  ">
+	<div class="row mt-5 ">
+		<div class="col-md-12 col-lg-6 program-details">
 			<h2>Program Details</h2>
 			<img src="images/act1.webp" alt="" class="w-75 rounded-5">
 			<p class="fs-6 fw-bold py-2">As-Sunnah Skill Development Institute is an institution for self-development and skill enhancement. This affiliate of the As-Sunnah Foundation, registered with the National Skill Development Authority, was established in 2022. Since its inception, it has been working to bring information technology and technical education to all levels of society, with the goal of eliminating unemployment and creating employment opportunities.</p>
@@ -134,7 +146,7 @@ $page_title = 'Blank'; // Set the page title
 				<p>Join the effort to alleviate poverty and create employment.</p>
 	</div>
 			<div class="card-btn">
-				<button>Donate Now</button>
+				<a href="donate.php">Donate Now</a>
 			</div>
 		</div>
 	
@@ -142,40 +154,72 @@ $page_title = 'Blank'; // Set the page title
   </div>
  <!-- Donate card end  -->
 
-  <!-- Course Description start  -->
-   <div class="course-bg">
-	<div class="container">
-<h1 class="text-center ">Course Description</h1>
 
-<div class="row">
-	<div class="col-md-12 col-lg-6">
-		<div class="description-card">
-	<div class="">
-	<img src="images/small-business-management-card.webp" alt="">
-	</div>
-	<div class="course-description-subtext">
-	<h4>Small Business Management</h4>
-	<p>The main goal of this course is to increase the technical skills of educated unemployed people and create employment opportunities for them. At the end of the</p>
-	<button>See Details</button>
-	</div>
-		</div>
-	</div>
-	<div class="col-md-12 col-lg-6">
-		<div class="description-card">
-	<div class="">
-	<img src="images/the-art-of-sales-and-marketing-card.webp" alt="">
-	</div>
-	<div class="course-description-subtext">
-	<h4>The Art of Sales and Marketing</h4>
-	<p>The main objective of this course is to improve the business and economic sectors of Bangladesh by creating skilled and experienced manpower in the workplace of</p>
-	<button>See Details</button>
-	</div>
-		</div>
-	</div>
-</div>
-	</div>
-   </div>
   <!-- Course Description End  -->
+
+
+<!-- ADD THIS SCRIPT AT THE BOTTOM, BEFORE THE CLOSING PHP TAG -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Amount button functionality
+    const amountButtons = document.querySelectorAll('.amount-btn:not(#otherBtn)');
+    const otherBtn = document.getElementById('otherBtn');
+    const donationInput = document.getElementById('donationAmount');
+
+    if (amountButtons.length > 0 && donationInput) {
+        amountButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.amount-btn').forEach(btn => btn.classList.remove('active'));
+
+                // Add active class to clicked button
+                this.classList.add('active');
+
+                // Set the amount
+                const amount = this.getAttribute('data-amount');
+                donationInput.value = amount;
+            });
+        });
+    }
+
+    if (otherBtn && donationInput) {
+        otherBtn.addEventListener('click', function() {
+            // Remove active class from all buttons
+            document.querySelectorAll('.amount-btn').forEach(btn => btn.classList.remove('active'));
+
+            // Add active to Other button
+            this.classList.add('active');
+
+            // Clear and focus input
+            donationInput.value = '';
+            donationInput.focus();
+        });
+    }
+
+    if (donationInput) {
+        donationInput.addEventListener('input', function() {
+            const currentValue = this.value;
+            let matchFound = false;
+
+            amountButtons.forEach(button => {
+                if (button.getAttribute('data-amount') === currentValue) {
+                    document.querySelectorAll('.amount-btn').forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    matchFound = true;
+                }
+            });
+
+            if (!matchFound && currentValue !== '') {
+                document.querySelectorAll('.amount-btn').forEach(btn => btn.classList.remove('active'));
+                if (otherBtn) {
+                    otherBtn.classList.add('active');
+                }
+            }
+        });
+    }
+});
+</script>
+  
 <!--========================================================================-->
 <!---------------------------- Your Content End Here ------------------------->
 <!--========================================================================-->
