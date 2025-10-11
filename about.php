@@ -54,7 +54,7 @@ $page_title = 'Contact'; // Set the page title
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 mb-5">
 					<div class="about_image"><img src="images/about_1.jpg" alt=""></div>
 				</div>
 			</div>
@@ -64,7 +64,7 @@ $page_title = 'Contact'; // Set the page title
 				<h2>Goals and Objectives</h2>
 			</div>
 
-			<div class="row">
+			<div class="mt-5 row tabs-rounded">
 				<!-- Goals and Objectives Tabs -->
 				<div class="tabs">
 					<div class="tabs_container">

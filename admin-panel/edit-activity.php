@@ -1,10 +1,8 @@
 <?php
-$current_page = basename($_SERVER['PHP_SELF']); // Get the current page name
-$page_title = 'Edit Activity'; // Set the page title
+$current_page = basename($_SERVER['PHP_SELF']);
+$page_title = 'Edit Activity';
 ?>
 <?php require './components/header.php'; ?>
-
-
 
 <!--------------------------->
 <!-- START MAIN AREA -->
@@ -53,23 +51,16 @@ $page_title = 'Edit Activity'; // Set the page title
                         <div class="card-body p-4">
                             <div class="mb-3">
                                 <label for="activityTitle" class="form-label">Activity Title <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="activityTitle" name="title" value="Tree Plantation Drive 2024" required>
+                                <input type="text" class="form-control" id="activityTitle" name="title" value="Youth Skills Development Initiative" required>
                             </div>
 
                             <div class="mb-3">
                                 <label for="activityDescription" class="form-label">Activity Description <span class="text-danger">*</span></label>
-                                <textarea class="form-control" id="activityDescription" name="description" rows="10" required>Join us for our annual Tree Plantation Drive 2024, a community initiative aimed at creating a greener and more sustainable environment for future generations.
+                                <textarea class="form-control" id="activityDescription" name="description" rows="10" required>An ScuntSS (Skill Development Institute) is an initiative-driven self-skill development journey and community that helps to unlock the next billion creators. Here, Scunters can find programs that will help them in their skill development career.
 
-This year, we aim to plant 1,000 trees across various locations in Dhaka. The plantation drive will focus on native species that are well-adapted to our local climate and require minimal maintenance.
+As ScuntSS SDE, we aim to see that our country is full of skill-self reliance people. We imagine, in a few years coaching on skillful information technology, and ethical hacking as well as data science courses to a community reaction.
 
-Event Highlights:
-- Plant native tree species in designated areas
-- Educational sessions on environmental conservation
-- Community engagement and team building activities
-- Refreshments and certificates for all participants
-- Photo opportunities and media coverage
-
-This is a great opportunity to give back to the community, meet like-minded individuals, and make a lasting environmental impact. All ages are welcome, and families are encouraged to participate together.</textarea>
+By developing skilled human resources, DNS helpers; we believe, should be equally be a platform as an effective tool for defending the country's security and Prosperity and identifying and nurturing merit.</textarea>
                             </div>
 
                             <div class="row g-3">
@@ -77,12 +68,11 @@ This is a great opportunity to give back to the community, meet like-minded indi
                                     <label for="activityType" class="form-label">Activity Type <span class="text-danger">*</span></label>
                                     <select class="form-select" id="activityType" name="type" required>
                                         <option value="">Select Type</option>
-                                        <option value="community_service" selected>Community Service</option>
+                                        <option value="training" selected>Training</option>
                                         <option value="workshop">Workshop</option>
-                                        <option value="training">Training</option>
-                                        <option value="fundraising">Fundraising</option>
-                                        <option value="awareness">Awareness Campaign</option>
-                                        <option value="social">Social Event</option>
+                                        <option value="seminar">Seminar</option>
+                                        <option value="conference">Conference</option>
+                                        <option value="community">Community Service</option>
                                     </select>
                                 </div>
 
@@ -90,185 +80,292 @@ This is a great opportunity to give back to the community, meet like-minded indi
                                     <label for="activityCategory" class="form-label">Category <span class="text-danger">*</span></label>
                                     <select class="form-select" id="activityCategory" name="category" required>
                                         <option value="">Select Category</option>
-                                        <option value="environment" selected>Environment</option>
+                                        <option value="skill_development" selected>Skill Development</option>
                                         <option value="education">Education</option>
                                         <option value="health">Health</option>
-                                        <option value="poverty">Poverty Alleviation</option>
-                                        <option value="youth">Youth Development</option>
+                                        <option value="environment">Environment</option>
+                                        <option value="awareness">Awareness</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Activity Image Card -->
-                    <div class="card shadow-sm mb-4">
-                        <div class="card-header bg-white py-3">
-                            <h5 class="mb-0">
-                                <i class="fa-solid fa-image me-2"></i>Activity Image
-                            </h5>
-                        </div>
-                        <div class="card-body p-4">
-                            <!-- Current Image -->
-                            <div class="mb-3">
-                                <label class="form-label">Current Image</label>
-                                <div class="current-image-preview position-relative">
-                                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&h=400&fit=crop" alt="Current Activity Image" class="img-fluid rounded">
-                                    <button type="button" class="btn btn-sm btn-danger position-absolute bottom-0 start-0">
-                                        <i class="fa-solid fa-trash"></i> Remove
-                                    </button>
+                    <!-- Dynamic Sections Container -->
+                    <div id="dynamicSectionsContainer">
+                        <!-- Existing Section 1: Goals & Objectives -->
+                        <div class="card shadow-sm mb-4 dynamic-section" data-section-id="1">
+                            <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center gap-2 flex-grow-1">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                    <input type="text" class="form-control form-control-sm section-title-input" name="section_title_1" value="Project Goals & Objectives" placeholder="Enter section title" style="max-width: 300px;">
                                 </div>
+                                <button type="button" class="btn btn-sm btn-outline-danger" onclick="removeSectionDynamic(this)">
+                                    <i class="fa-solid fa-trash"></i> Remove Section
+                                </button>
                             </div>
-
-                            <!-- Upload New Image -->
-                            <div>
-                                <label for="activityImage" class="form-label">Upload New Image</label>
-                                <input type="file" class="form-control" id="activityImage" name="activity_image" accept="image/*">
-                                <div class="form-text">Recommended size: 1200x600px. Max file size: 2MB. Formats: JPG, PNG, WebP</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Date & Location Card -->
-                    <div class="card shadow-sm mb-4">
-                        <div class="card-header bg-white py-3">
-                            <h5 class="mb-0">
-                                <i class="fa-solid fa-calendar-days me-2"></i>Date, Time & Location
-                            </h5>
-                        </div>
-                        <div class="card-body p-4">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label for="eventDate" class="form-label">Event Date <span class="text-danger">*</span></label>
-                                    <input type="date" class="form-control" id="eventDate" name="event_date" value="2024-03-05" required>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label for="eventTime" class="form-label">Event Time <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="eventTime" name="event_time" value="8:00 AM - 12:00 PM" placeholder="e.g., 9:00 AM - 5:00 PM" required>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <label for="eventLocation" class="form-label">Location <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="eventLocation" name="location" value="Ramna Park, Dhaka" required>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label for="organizer" class="form-label">Organizer <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="organizer" name="organizer" value="Environmental Committee" required>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label for="registrationFee" class="form-label">Registration Fee</label>
-                                    <input type="text" class="form-control" id="registrationFee" name="registration_fee" value="Free" placeholder="e.g., Free, 500 BDT">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Participants Card -->
-                    <div class="card shadow-sm mb-4">
-                        <div class="card-header bg-white py-3">
-                            <h5 class="mb-0">
-                                <i class="fa-solid fa-users me-2"></i>Participant Information
-                            </h5>
-                        </div>
-                        <div class="card-body p-4">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label for="maxParticipants" class="form-label">Maximum Participants</label>
-                                    <input type="number" class="form-control" id="maxParticipants" name="max_participants" value="200" min="1">
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label for="currentParticipants" class="form-label">Current Registered</label>
-                                    <input type="number" class="form-control" id="currentParticipants" name="current_participants" value="150" min="0" readonly>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="registrationOpen" name="registration_open" checked>
-                                        <label class="form-check-label" for="registrationOpen">
-                                            Registration is currently open
-                                        </label>
+                            <div class="card-body p-4">
+                                <div class="mb-3">
+                                    <label class="form-label">Items</label>
+                                    <div class="items-list">
+                                        <div class="item-row mb-2">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fa-solid fa-circle-check text-success"></i></span>
+                                                <input type="text" class="form-control" name="section_1_items[]" value="Skill enhancement">
+                                                <button type="button" class="btn btn-outline-danger" onclick="removeItemDynamic(this)">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="item-row mb-2">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fa-solid fa-circle-check text-success"></i></span>
+                                                <input type="text" class="form-control" name="section_1_items[]" value="Job placement assistance">
+                                                <button type="button" class="btn btn-outline-danger" onclick="removeItemDynamic(this)">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="item-row mb-2">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fa-solid fa-circle-check text-success"></i></span>
+                                                <input type="text" class="form-control" name="section_1_items[]" value="Employment initiation">
+                                                <button type="button" class="btn btn-outline-danger" onclick="removeItemDynamic(this)">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="item-row mb-2">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fa-solid fa-circle-check text-success"></i></span>
+                                                <input type="text" class="form-control" name="section_1_items[]" value="Knowledge base creation">
+                                                <button type="button" class="btn btn-outline-danger" onclick="removeItemDynamic(this)">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <button type="button" class="btn btn-outline-primary btn-sm" onclick="addNewItemDynamic(this)">
+                                    <i class="fa-solid fa-plus"></i> Add New Item
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Existing Section 2: Expenditure Sectors -->
+                        <div class="card shadow-sm mb-4 dynamic-section" data-section-id="2">
+                            <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center gap-2 flex-grow-1">
+                                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                                    <input type="text" class="form-control form-control-sm section-title-input" name="section_title_2" value="Expenditure Sectors" placeholder="Enter section title" style="max-width: 300px;">
+                                </div>
+                                <button type="button" class="btn btn-sm btn-outline-danger" onclick="removeSectionDynamic(this)">
+                                    <i class="fa-solid fa-trash"></i> Remove Section
+                                </button>
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="mb-3">
+                                    <label class="form-label">Items</label>
+                                    <div class="items-list">
+                                        <div class="item-row mb-2">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fa-solid fa-dollar-sign text-primary"></i></span>
+                                                <input type="text" class="form-control" name="section_2_items[]" value="Small purchase for the handouts">
+                                                <button type="button" class="btn btn-outline-danger" onclick="removeItemDynamic(this)">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="item-row mb-2">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fa-solid fa-dollar-sign text-primary"></i></span>
+                                                <input type="text" class="form-control" name="section_2_items[]" value="Consultation of key business & field-hands">
+                                                <button type="button" class="btn btn-outline-danger" onclick="removeItemDynamic(this)">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="item-row mb-2">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fa-solid fa-dollar-sign text-primary"></i></span>
+                                                <input type="text" class="form-control" name="section_2_items[]" value="Snack, Launching point (participant)">
+                                                <button type="button" class="btn btn-outline-danger" onclick="removeItemDynamic(this)">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="item-row mb-2">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fa-solid fa-dollar-sign text-primary"></i></span>
+                                                <input type="text" class="form-control" name="section_2_items[]" value="Management and duplicate">
+                                                <button type="button" class="btn btn-outline-danger" onclick="removeItemDynamic(this)">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="item-row mb-2">
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fa-solid fa-dollar-sign text-primary"></i></span>
+                                                <input type="text" class="form-control" name="section_2_items[]" value="Going by modifying">
+                                                <button type="button" class="btn btn-outline-danger" onclick="removeItemDynamic(this)">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-outline-primary btn-sm" onclick="addNewItemDynamic(this)">
+                                    <i class="fa-solid fa-plus"></i> Add New Item
+                                </button>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Contact Information Card -->
+                    <!-- Add New Section Button -->
+                    <div class="mb-4">
+                        <button type="button" class="btn btn-success" onclick="addNewSectionDynamic()">
+                            <i class="fa-solid fa-plus-circle"></i> Add New Section
+                        </button>
+                    </div>
+
+                    <!-- Date & Budget Card -->
                     <div class="card shadow-sm mb-4">
                         <div class="card-header bg-white py-3">
                             <h5 class="mb-0">
-                                <i class="fa-solid fa-address-card me-2"></i>Contact Information
+                                <i class="fa-solid fa-calendar-days me-2"></i>Date & Budget
                             </h5>
                         </div>
                         <div class="card-body p-4">
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <label for="coordinator" class="form-label">Coordinator</label>
-                                    <input type="text" class="form-control" id="coordinator" name="coordinator" value="Sarah Johnson">
+                                    <label for="startDate" class="form-label">Start Date <span class="text-danger">*</span></label>
+                                    <input type="date" class="form-control" id="startDate" name="start_date" value="2024-02-01" required>
                                 </div>
 
                                 <div class="col-md-6">
-                                    <label for="contactEmail" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="contactEmail" name="contact_email" value="sarah.j@organization.org">
+                                    <label for="endDate" class="form-label">End Date <span class="text-danger">*</span></label>
+                                    <input type="date" class="form-control" id="endDate" name="end_date" value="2024-06-30" required>
                                 </div>
 
                                 <div class="col-md-6">
-                                    <label for="contactPhone" class="form-label">Phone</label>
-                                    <input type="tel" class="form-control" id="contactPhone" name="contact_phone" value="+880 1987-654321">
+                                    <label for="totalBudget" class="form-label">Total Budget <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">৳</span>
+                                        <input type="number" class="form-control" id="totalBudget" name="budget" value="500000" required>
+                                    </div>
                                 </div>
 
                                 <div class="col-md-6">
-                                    <label for="website" class="form-label">Website</label>
-                                    <input type="url" class="form-control" id="website" name="website" value="www.organization.org/events">
+                                    <label for="targetParticipants" class="form-label">Target Participants</label>
+                                    <input type="number" class="form-control" id="targetParticipants" name="participants" value="150">
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Attachments Card -->
+                    <!-- Location & Venue Card -->
                     <div class="card shadow-sm mb-4">
                         <div class="card-header bg-white py-3">
                             <h5 class="mb-0">
-                                <i class="fa-solid fa-paperclip me-2"></i>Attachments & Documents
+                                <i class="fa-solid fa-location-dot me-2"></i>Location & Venue
                             </h5>
                         </div>
                         <div class="card-body p-4">
-                            <!-- Existing Attachments -->
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="venueName" class="form-label">Venue Name</label>
+                                    <input type="text" class="form-control" id="venueName" name="venue" value="Community Center Hall">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="venueAddress" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="venueAddress" name="address" value="Dhanmondi, Dhaka">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="district" class="form-label">District</label>
+                                    <select class="form-select" id="district" name="district">
+                                        <option value="">Select District</option>
+                                        <option value="dhaka" selected>Dhaka</option>
+                                        <option value="chittagong">Chittagong</option>
+                                        <option value="rajshahi">Rajshahi</option>
+                                        <option value="khulna">Khulna</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="division" class="form-label">Division</label>
+                                    <select class="form-select" id="division" name="division">
+                                        <option value="">Select Division</option>
+                                        <option value="dhaka" selected>Dhaka</option>
+                                        <option value="chittagong">Chittagong</option>
+                                        <option value="rajshahi">Rajshahi</option>
+                                        <option value="khulna">Khulna</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Images Card -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-white py-3">
+                            <h5 class="mb-0">
+                                <i class="fa-solid fa-images me-2"></i>Activity Images
+                            </h5>
+                        </div>
+                        <div class="card-body p-4">
+
+                            <div>
+                                <label for="newImages" class="form-label">Add New Images</label>
+                          <input type="file" class="form-control" id="newImages" name="image" accept="image/*" onchange="previewNewImages(this)">
+
+                                <div class="form-text">You can upload single image. Max size: 5MB per image. Supported formats: JPG, PNG, GIF</div>
+                            </div>
+
+                            <!-- Preview New Images -->
+                            <div class="row g-3 mt-2" id="newImagesPreview"></div>
+                        </div>
+                    </div>
+
+                    <!-- Attachments & Resources Card -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-white py-3">
+                            <h5 class="mb-0">
+                                <i class="fa-solid fa-paperclip me-2"></i>Attachments & Resources
+                            </h5>
+                        </div>
+                        <div class="card-body p-4">
                             <div class="mb-3">
                                 <label class="form-label">Current Attachments</label>
-                                <div class="existing-files">
+                                <div class="existing-files" id="existingFilesContainer">
                                     <div class="file-item d-flex align-items-center justify-content-between p-3 border rounded mb-2">
                                         <div class="d-flex align-items-center gap-3">
                                             <i class="fa-solid fa-file-pdf text-danger fs-4"></i>
                                             <div>
-                                                <div class="fw-semibold">Activity-Guidelines.pdf</div>
-                                                <div class="text-muted small">320 KB</div>
+                                                <div class="fw-semibold">Activity-Proposal.pdf</div>
+                                                <div class="text-muted small">342 KB</div>
                                             </div>
                                         </div>
-                                        <button type="button" class="btn btn-sm btn-outline-danger">
+                                        <button type="button" class="btn btn-sm btn-outline-danger" onclick="removeExistingFile(this)">
                                             <i class="fa-solid fa-trash"></i> Remove
                                         </button>
                                     </div>
                                     <div class="file-item d-flex align-items-center justify-content-between p-3 border rounded mb-2">
                                         <div class="d-flex align-items-center gap-3">
-                                            <i class="fa-solid fa-file-excel text-success fs-4"></i>
+                                            <i class="fa-solid fa-file-word text-primary fs-4"></i>
                                             <div>
-                                                <div class="fw-semibold">Participant-List.xlsx</div>
-                                                <div class="text-muted small">145 KB</div>
+                                                <div class="fw-semibold">Activity-Details.docx</div>
+                                                <div class="text-muted small">156 KB</div>
                                             </div>
                                         </div>
-                                        <button type="button" class="btn btn-sm btn-outline-danger">
+                                        <button type="button" class="btn btn-sm btn-outline-danger" onclick="removeExistingFile(this)">
                                             <i class="fa-solid fa-trash"></i> Remove
                                         </button>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Add New Attachments -->
                             <div>
                                 <label for="newAttachments" class="form-label">Add New Attachments</label>
                                 <input type="file" class="form-control" id="newAttachments" name="attachments[]" multiple>
@@ -291,30 +388,22 @@ This is a great opportunity to give back to the community, meet like-minded indi
                             <div class="mb-3">
                                 <label for="activityStatus" class="form-label">Activity Status <span class="text-danger">*</span></label>
                                 <select class="form-select" id="activityStatus" name="status" required>
-                                    <option value="active" selected>Active</option>
-                                    <option value="draft">Draft</option>
+                                    <option value="upcoming" selected>Upcoming</option>
+                                    <option value="ongoing">Ongoing</option>
                                     <option value="completed">Completed</option>
                                     <option value="cancelled">Cancelled</option>
-                                </select>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="activityProgress" class="form-label">Progress Status</label>
-                                <select class="form-select" id="activityProgress" name="progress">
-                                    <option value="upcoming">Upcoming</option>
-                                    <option value="ongoing" selected>Ongoing</option>
-                                    <option value="completed">Completed</option>
+                                    <option value="draft">Draft</option>
                                 </select>
                             </div>
 
                             <div class="alert alert-info mb-0">
                                 <i class="fa-solid fa-circle-info me-2"></i>
-                                <small>Setting status to "Active" will publish this activity immediately.</small>
+                                <small>Changing status to "Ongoing" will make this activity visible on the public page.</small>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Activity Details Card -->
+                    <!-- Activity ID Card -->
                     <div class="card shadow-sm mb-4">
                         <div class="card-header bg-white py-3">
                             <h5 class="mb-0">
@@ -324,7 +413,7 @@ This is a great opportunity to give back to the community, meet like-minded indi
                         <div class="card-body p-4">
                             <div class="mb-3">
                                 <label class="form-label text-muted small">Activity ID</label>
-                                <div class="fw-bold">#ACT-001</div>
+                                <div class="fw-bold">#ACT-2024-001</div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label text-muted small">Created By</label>
@@ -341,6 +430,37 @@ This is a great opportunity to give back to the community, meet like-minded indi
                         </div>
                     </div>
 
+                    <!-- Progress Card -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header bg-white py-3">
+                            <h5 class="mb-0">
+                                <i class="fa-solid fa-chart-line me-2"></i>Progress
+                            </h5>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <label class="form-label text-muted small">Registered Participants</label>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold fs-5">87</span>
+                                    <span class="text-muted">/ 150</span>
+                                </div>
+                                <div class="progress mt-2" style="height: 8px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 58%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-0">
+                                <label class="form-label text-muted small">Budget Used</label>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold fs-5">৳ 245,000</span>
+                                    <span class="text-muted">/ ৳ 500,000</span>
+                                </div>
+                                <div class="progress mt-2" style="height: 8px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 49%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Quick Tips Card -->
                     <div class="card shadow-sm mb-4 border-primary">
                         <div class="card-header bg-primary text-white py-3">
@@ -350,11 +470,11 @@ This is a great opportunity to give back to the community, meet like-minded indi
                         </div>
                         <div class="card-body p-3">
                             <ul class="mb-0 ps-3 small">
-                                <li class="mb-2">Use high-quality images</li>
-                                <li class="mb-2">Provide clear event details</li>
-                                <li class="mb-2">Set realistic participant limits</li>
-                                <li class="mb-2">Include contact information</li>
-                                <li class="mb-0">Update status regularly</li>
+                                <li class="mb-2">Define clear objectives</li>
+                                <li class="mb-2">Set realistic budget limits</li>
+                                <li class="mb-2">Add custom sections as needed</li>
+                                <li class="mb-2">Include venue information</li>
+                                <li class="mb-0">Update progress regularly</li>
                             </ul>
                         </div>
                     </div>
@@ -383,85 +503,7 @@ This is a great opportunity to give back to the community, meet like-minded indi
 <!--------------------------->
 
 <style>
-.edit-activity .card {
-    border: none;
-}
 
-.edit-activity .card-header {
-    border-bottom: 2px solid #e9ecef;
-}
-
-.edit-activity .form-label {
-    font-weight: 500;
-    color: #2d3748;
-    margin-bottom: 0.5rem;
-}
-
-.edit-activity .form-control,
-.edit-activity .form-select {
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    padding: 0.625rem 0.875rem;
-    transition: all 0.3s ease;
-}
-
-.edit-activity .form-control:focus,
-.edit-activity .form-select:focus {
-    border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-}
-
-.edit-activity .current-image-preview img {
-    max-height: 300px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.edit-activity .file-item {
-    transition: all 0.3s ease;
-}
-
-.edit-activity .file-item:hover {
-    background-color: #f8f9fa;
-}
-
-.edit-activity .btn-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border: none;
-    font-weight: 500;
-    padding: 0.625rem 1.25rem;
-}
-
-.edit-activity .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
-}
-
-.edit-activity .btn-outline-secondary {
-    border: 2px solid #a0aec0;
-    color: #4a5568;
-    font-weight: 500;
-}
-
-.edit-activity .btn-outline-secondary:hover {
-    background: #a0aec0;
-    color: white;
-}
-
-.edit-activity .btn-outline-danger {
-    border: 2px solid #f56565;
-    color: #f56565;
-    font-weight: 500;
-}
-
-.edit-activity .btn-outline-danger:hover {
-    background: #f56565;
-    color: white;
-}
-
-.edit-activity textarea {
-    min-height: 200px;
-}
 </style>
 
 

@@ -15,9 +15,7 @@ $page_title = 'View Activity'; // Set the page title
         <div class="page-header">
             <div class="w-100 d-flex flex-wrap justify-content-between align-items-center gap-3">
                 <div class="d-flex align-items-center gap-3">
-                    <div class="icon-box">
-                        <i class="fa-solid fa-calendar-check"></i>
-                    </div>
+
                     <div>
                         <h1>View Activity</h1>
                         <nav aria-label="breadcrumb">
@@ -105,63 +103,7 @@ $page_title = 'View Activity'; // Set the page title
                     </div>
                 </div>
 
-                <!-- Activity Details Grid -->
-                <div class="row g-3 mb-4">
-                    <div class="col-md-6">
-                        <div class="info-box p-3 bg-light rounded">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fa-solid fa-calendar-check text-primary me-2"></i>
-                                <strong>Event Date</strong>
-                            </div>
-                            <div class="ms-4">March 5, 2024</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-box p-3 bg-light rounded">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fa-solid fa-clock text-success me-2"></i>
-                                <strong>Time</strong>
-                            </div>
-                            <div class="ms-4">8:00 AM - 12:00 PM</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-box p-3 bg-light rounded">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fa-solid fa-map-marker-alt text-danger me-2"></i>
-                                <strong>Location</strong>
-                            </div>
-                            <div class="ms-4">Ramna Park, Dhaka</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-box p-3 bg-light rounded">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fa-solid fa-users text-info me-2"></i>
-                                <strong>Participants</strong>
-                            </div>
-                            <div class="ms-4">150 / 200 Registered</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-box p-3 bg-light rounded">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fa-solid fa-user-tie text-warning me-2"></i>
-                                <strong>Organizer</strong>
-                            </div>
-                            <div class="ms-4">Environmental Committee</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="info-box p-3 bg-light rounded">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fa-solid fa-tag text-secondary me-2"></i>
-                                <strong>Registration Fee</strong>
-                            </div>
-                            <div class="ms-4">Free</div>
-                        </div>
-                    </div>
-                </div>
+
 
                 <!-- Attachments Section -->
                 <div class="attachments-section mb-4">
@@ -256,85 +198,8 @@ $page_title = 'View Activity'; // Set the page title
 <!-- END MAIN AREA -->
 <!--------------------------->
 
-<style>
-    .view-activity .card {
-        border: none;
-    }
 
-    .view-activity .badge {
-        padding: 0.4rem 0.8rem;
-        font-size: 0.75rem;
-        font-weight: 500;
-    }
 
-    .view-activity .activity-image img {
-        width: 100%;
-        height: auto;
-        max-height: 500px;
-        object-fit: cover;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    .view-activity .image-caption {
-        font-style: italic;
-    }
-
-    .view-activity .content-text {
-        line-height: 1.8;
-        color: #333;
-    }
-
-    .view-activity .content-text p {
-        margin-bottom: 1rem;
-    }
-
-    .view-activity .content-text ul {
-        padding-left: 1.5rem;
-    }
-
-    .view-activity .content-text li {
-        margin-bottom: 0.5rem;
-    }
-
-    .view-activity .info-box {
-        transition: all 0.3s ease;
-    }
-
-    .view-activity .info-box:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
-    }
-
-    .view-activity .attachment-item {
-        transition: all 0.3s ease;
-    }
-
-    .view-activity .attachment-item:hover {
-        background-color: #f8f9fa;
-        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-    }
-
-    .view-activity .contact-section {
-        border-left: 4px solid #0d6efd;
-    }
-
-    @media print {
-
-        .page-header,
-        .view-activity .d-flex.gap-2,
-        .view-activity .d-flex.justify-content-between:last-child,
-        .sidebar,
-        .navbar {
-            display: none !important;
-        }
-
-        .content-wrapper {
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-    }
-</style>
 
 
 

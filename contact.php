@@ -21,7 +21,7 @@ $page_title = 'Contact'; // Set the page title
 							<div class="home_title">Contact</div>
 							<div class="breadcrumbs">
 								<ul>
-									<li><a href="index.html">Home</a></li>
+									<li><a href="index.php">Home</a></li>
 									<li>Contact</li>
 								</ul>
 							</div>
@@ -88,7 +88,7 @@ $page_title = 'Contact'; // Set the page title
 						<!-- Google Map -->
 						<div id="google_map" class="google_map">
 							<div class="map_container">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0480549166914!2d90.3667632!3d23.7731584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf6de2c3b19b%3A0xeeef7eec6d1d012a!2sEasy%20Tech%20Solutions!5e1!3m2!1sen!2sbd!4v1759752382793!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="h-100"></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0480549166914!2d90.3667632!3d23.7731584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf6de2c3b19b%3A0xeeef7eec6d1d012a!2sEasy%20Tech%20Solutions!5e1!3m2!1sen!2sbd!4v1759752382793!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="h-100"></iframe>
 							</div>
 						</div>
 

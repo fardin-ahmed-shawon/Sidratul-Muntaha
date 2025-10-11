@@ -11,19 +11,52 @@
      }
 
      body {
-         font-family: "Poppins", sans-serif;
+         font-family: "Poppins", sans-serif !important;
+
      }
 
+     h1,
+     h2,
+     h3,
+     h4,
+     h5,
+     h6 {
+         font-family: 'Poppins', sans-serif;
+         color: #000;
+         -webkit-font-smoothing: antialiased;
+         -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+         text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+     }
 
-     /* Nav start  */
+     p {
+         font-family: 'Poppins', sans-serif;
+         color: #000;
+     }
+
+     /* Nav start */
      .header_container {
-         background: #ebebeb;
-         background: linear-gradient(100deg, rgba(235, 235, 235, 1) 62%, rgba(255, 255, 255, 1) 100%);
+         position: fixed;
+         left: 50%;
+         right: auto;
+         transform: translateX(-50%);
+         border-radius: 0;
+         background: rgba(255, 255, 255, 0.8);
          border-bottom: 1px solid #ebebeb;
-
+         box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+         backdrop-filter: blur(8px);
+         /* apply the blur */
+         -webkit-backdrop-filter: blur(8px);
+         /* Safari support */
+         z-index: 999;
+         /* make sure it stays on top */
+         max-width: 1200px;
+         width: 90%;
+         top: 20px;
+         border-radius: 15px;
      }
 
-     .main_nav_contaner {
+
+     .main_nav_container {
          margin: 0 auto;
      }
 
@@ -44,7 +77,10 @@
      .header_container .donate-btn-section a:hover {
          color: white;
      }
-
+.logo_img img{
+    object-fit: contain;
+    width: 60px;
+}
      .nav-donate-btn {
          display: block;
          padding: 10px 25px;
@@ -114,6 +150,14 @@
          color: #000;
      }
 
+     .menu_nav ul li a:hover {
+         color: #008E48;
+     }
+
+     .hamburger:hover i {
+         color: #008E48;
+     }
+
      /* Nav end */
      /* Home page css Start   */
 
@@ -148,7 +192,13 @@
      }
 
      .home_slider_nav_container {
+         position: absolute;
+         left: 15px;
+         top: -68px;
+         width: 103px;
+         height: 51px;
          background: #02BD61;
+         z-index: 3;
      }
 
      .home_slider_nav {
@@ -178,6 +228,12 @@
          background: #06CC6B;
      }
 
+     .featured_text {
+         margin-top: 18px;
+         line-height: 1.92;
+         color: black;
+     }
+
      /* Banner Below end    */
 
 
@@ -194,9 +250,15 @@
          border-radius: 10px;
      }
 
+     .section_title h2 {
+         font-weight: 600;
+         color: black;
+     }
+
      .section_subtitle {
          margin-top: 40px;
          margin-bottom: 20px;
+         color: black;
      }
 
      /* Donation Part Start   */
@@ -207,6 +269,7 @@
 
      .course_button {
          background: #02BD61;
+         border-radius: 10px;
      }
 
      .course_button:hover {
@@ -215,6 +278,7 @@
 
      .course_button .button_arrow {
          background: #05A657;
+         border-radius: 10px;
      }
 
      .course_button:hover .button_arrow {
@@ -224,6 +288,16 @@
      /* Donation Part End   */
 
      /* Activities part start   */
+     .owl-carousel .owl-item img {
+
+         -webkit-border-top-left-radius: 20px;
+         -webkit-border-top-right-radius: 20px;
+         -moz-border-radius-topleft: 20px;
+         -moz-border-radius-topright: 20px;
+         border-top-left-radius: 20px;
+         border-top-right-radius: 20px;
+     }
+
      .course_tag {
          background: #02BD61;
      }
@@ -248,19 +322,27 @@
          background: #06CC6B;
      }
 
-     .owl-item .course_body {
-         border-radius: 0px 0px 20px 20px;
-         -webkit-border-radius: 0px 0px 20px 20px;
-         -moz-border-radius: 0px 0px 20px 20px;
-     }
+     .course_body {
+         width: 100%;
+         padding-left: 34px;
+         padding-right: 32px;
+         padding-top: 56px;
+         padding-bottom: 51px;
+         background: #fff;
+         margin-bottom: 20px;
+         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+         margin-top: -2px;
 
-     .owl-carousel .owl-item img {
-         border-radius: 20px 20px 0px 0px;
-         -webkit-border-radius: 20px 20px 0px 0px;
-         -moz-border-radius: 20px 20px 0px 0px;
+         -webkit-border-bottom-right-radius: 20px;
+         -webkit-border-bottom-left-radius: 20px;
+         -moz-border-radius-bottomright: 20px;
+         -moz-border-radius-bottomleft: 20px;
+         border-bottom-right-radius: 20px;
+         border-bottom-left-radius: 20px;
      }
 
      /* Activities part end   */
+
 
      /* why choose us start  */
 
@@ -279,6 +361,10 @@
          color: #02BD61;
      }
 
+     .news_post_title a:hover {
+         color: #008E48;
+     }
+
      .event_title a:hover {
          color: #02BD61;
      }
@@ -294,8 +380,11 @@
 
      }
 
-     iframe {
+     .video iframe {
          border-radius: 20px;
+         border: none;
+         outline: none;
+         box-shadow: none;
      }
 
      /* phoots    */
@@ -308,10 +397,45 @@
      }
 
 
+     .join-bg {
+         background-image: url("images/join bg.png");
+         background-repeat: no-repeat;
+         background-position: center center;
+         padding: 35px 40px;
+         border-radius: 20px;
+
+     }
+
+     .join-input {
+         width: 40%;
+         border-top-left-radius: 10px;
+         border-bottom-left-radius: 10px;
+         border: none;
+         outline: none;
+         padding: 5px 20px;
+     }
+
+     .join-btn {
+         background: #E8B65D;
+         border-top-right-radius: 10px;
+         border-bottom-right-radius: 10px;
+     }
+
+     .join-btn:hover {
+         background: #E8B65D;
+     }
+
      /* Home page css end   */
 
 
      /* About Page css Start   */
+     .about {
+         width: 100%;
+         background: #FFFFFF;
+         padding-top: 28px;
+         padding-bottom: 111px;
+     }
+
      .breadcrumbs ul li {
          color: #02BD61;
      }
@@ -320,10 +444,57 @@
          color: #02BD61;
      }
 
-     .tab::after {
-
-         background: #02BD61;
+     .tabs {
+         width: 100%;
+         margin-top: 20px;
+         background: #FFFFFF;
      }
+
+     .tab {
+
+         height: 50px;
+         background: #008E48;
+         font-size: 16px;
+         color: #fff;
+         font-weight: 600;
+         line-height: 50px;
+         padding-left: 25px;
+         padding-right: 25px;
+         text-align: center;
+         cursor: pointer;
+         margin-left: 2px;
+         border-radius: 5px;
+
+     }
+
+     .tabs-rounded {
+         border: 1px solid #ccc;
+         border-radius: 20px;
+         padding: 10px;
+     }
+
+     .tab::after {
+         position: absolute;
+         bottom: -8px;
+
+         background: #000;
+     }
+
+     .tab_panels {
+         padding-left: 50px;
+         padding-right: 2px;
+         padding-top: 47px;
+         padding-bottom: 32px;
+     }
+
+     /* .tab_panels {
+         padding-left: 43px;
+         padding-right: 10px;
+         padding-top: 47px;
+         padding-bottom: 32px;
+         border: 1px dotted slateblue;
+         border-radius: 20px;
+     } */
 
      /* About Page css End   */
 
@@ -336,6 +507,11 @@
          display: block;
          white-space: nowrap;
      }
+
+     .course_title h3 a:hover {
+         color: #02BD61;
+     }
+
      .text-elipsis {
          overflow: hidden;
          text-overflow: ellipsis;
@@ -491,16 +667,20 @@
 
      .notice-features {
          padding: 30px 40px;
-         background: #EEF2F0;
+         background: #008E48;
          font-weight: 600;
-         color: #008E48;
+         color: #fff;
          border-radius: 20px;
      }
 
      .notice-features h1 {
          font-size: 20px;
          font-weight: 600;
-         color: #008E48;
+         color: #fff;
+     }
+
+     .notice-features p {
+         color: #fff;
      }
 
      .description-card {
@@ -582,26 +762,30 @@
          color: #02BD61;
      }
 
-     .course_body {
-         border-radius: 0px;
+
+
+     .card-bg {
+         background-color: #008E48;
+         border-radius: 10px;
 
      }
 
-     .card-bg {
-         background-color: #EEF2F0;
-         border-radius: 10px;
+     .card-bg h4 {
+         color: white;
+         font-weight: 600;
      }
 
      .card-bg ul li {
          font-size: 14px;
-         font-weight: 600;
+         font-weight: 500;
+         color: white;
      }
 
      .card-bg ul li i {
          font-size: 16px;
          margin-right: 5px;
          margin-top: 2px;
-         color: #06CC6B;
+         color: #fff;
      }
 
      .program-details img {
@@ -609,15 +793,17 @@
          border-radius: 20px;
      }
 
-     .program-details {
-         margin: 80px 0;
 
-     }
 
      /* activities detials  end     */
 
 
      /* Donation Page Css start  */
+
+     .donate-page {
+         margin: 125px 0;
+     }
+
      .donate-page .donation-card {
          border: none;
          border-radius: 16px;
@@ -654,7 +840,7 @@
          padding: 1.25rem;
          border-radius: 12px;
          margin-bottom: 1.75rem;
-         border-left: 5px solid #019f51;
+         border-left: 2px solid #019f51;
          color: #ffffff;
          box-shadow: 0 2px 10px rgba(2, 189, 97, 0.2);
      }
@@ -715,12 +901,27 @@
          font-size: 1rem;
      }
 
+.donate-page  .payment-method{
+    padding: 5px 10px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+border-radius: 10px;
+    
+}
+.donate-page .form-check {
+    position: relative;
+    display: block;
+    margin-bottom: .5rem;
+    margin: 1px 24px;
+    
+}
+
      .donate-page .form-control {
-         border: 2px solid #e9ecef;
+         border: 1px solid #e9ecef;
          padding: 0.875rem 1.125rem;
          transition: all 0.2s ease;
          font-size: 1rem;
          border-radius: 10px;
+         color: #000;
      }
 
      .donate-page .form-control:focus {
@@ -733,16 +934,26 @@
          border-radius: 10px;
          overflow: hidden;
      }
+     .donate_card_bg .card-btn a {
+    background-color: #f78b04;
+    color: #fff;
+}
 
-     .donate-page .input-group-text {
-         background: linear-gradient(135deg, #02BD61 0%, #019f51 100%);
-         border: 2px solid #02BD61;
-         border-right: none;
-         color: #ffffff;
-         font-weight: 700;
-         padding: 0.875rem 1.25rem;
-         font-size: 1.1rem;
-     }
+.donate-page .input-group-text {
+    background: linear-gradient(135deg, #02BD61 0%, #019f51 100%);
+    border: 2px solid #02BD61;
+    border-right: none;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.875rem 1.25rem;
+    font-size: 1.1rem;
+}
+.donate-page .category_options{
+    border: 1px solid gainsboro;
+    outline: none;
+    color: black;
+    border-radius: 10px;
+}
 
      .donate-page .input-group .form-control {
          border-left: none;
@@ -760,9 +971,9 @@
      .donate-page .btn-donate {
          background: linear-gradient(135deg, #02BD61 0%, #019f51 100%);
          border: none;
-         padding: 1.125rem 2rem;
-         font-size: 1.25rem;
-         font-weight: 700;
+         padding: 8px 24px;
+         font-size: 17px;
+         font-weight: 600;
          border-radius: 12px;
          transition: all 0.3s ease;
          text-transform: uppercase;
@@ -792,20 +1003,7 @@
          margin-bottom: 1rem;
      }
 
-     /* Donation Page Css end */
-     .header_container {
-         position: fixed;
-         top: 5px;
-         left: 26px;
-         border-radius: 15px;
-         background: #ebebeb;
-         background: linear-gradient(100deg, rgba(235, 235, 235, 1) 62%, rgba(255, 255, 255, 1) 100%);
-         border-bottom: 1px solid #ebebeb;
-         width: 95%;
-         margin: 20px auto;
-         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 
-     }
 
      .header_content {
          height: 78px;
@@ -832,17 +1030,15 @@
 
          /* Media queries start  */
          @media(max-width:991px) {
-             .header_container {
-                 position: inherit;
-                 top: 0;
-                 left: 0;
-                 border-radius: 0px;
-                 background: #ebebeb;
-                 background: linear-gradient(100deg, rgba(235, 235, 235, 1) 62%, rgba(255, 255, 255, 1) 100%);
-                 border-bottom: 1px solid #ebebeb;
-                 width: 100%;
-                 margin: 0;
 
+             .header_container {
+                 left: 0;
+                 right: 0;
+                 transform: none;
+                 top: 0;
+                 border-radius: 0;
+                 width: 100%;
+                 max-width: none;
              }
 
              .header_content {
@@ -855,12 +1051,12 @@
              }
 
              .main_nav_container {
-                 margin-left: auto;
+                 margin-right: 0;
              }
 
              .donate_card_bg .card-btn a {
                  width: 105%;
-                 background-color: #D08322;
+                 background-color: #f78b04;
                  border-radius: 15px;
                  font-weight: 600;
                  padding: 10px 38px;
@@ -894,8 +1090,32 @@
          }
      }
 
+     /* Footer part start   */
+     .footer_contact_title {
+         color: #06CC6B;
+     }
+
+     .footer_social ul li a i {
+         color: #017a3f;
+     }
+
+     .footer_social ul li a i:hover {
+         color: #02BD61;
+     }
+
+     .footer_list li a:hover {
+         color: #06CC6B;
+     }
+
+     /* Footer part End   */
+
 
      @media(max-width:768px) {
+
+         .program-details {
+             margin: 40px 0;
+
+         }
 
          .donate_card_bg .cardp p {
              color: white;

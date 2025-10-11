@@ -118,13 +118,12 @@ $page_title = 'Home'; // Set the page title
 
 								</div>
 								<div class="featured_title">
-									<h3><a href="courses.html">For Ummah, With Sunnah</a></h3>
+									<h3><a href="activities.php">For Ummah, With Sunnah</a></h3>
 								</div>
 								<div class="featured_text ">The Ummah represents a powerful bond of unity among Muslims. Regardless of where they live or their cultural backgrounds, Muslims are considered part of one large family</div> <br />
 								<div class="featured_footer d-flex align-items-center justify-content-start">
 									<div class="featured_author_image"><img src="images/belowBanner.jpg" alt=""></div>
-									<div class="featured_author_name">By <a href="#">James S. Morrison</a></div>
-									<div class="featured_sales ml-auto"><span>352</span> Sales</div>
+									<div class="featured_author_name">By <a href="#">a Muslim</a></div>
 								</div>
 							</div>
 						</div>
@@ -152,8 +151,21 @@ $page_title = 'Home'; // Set the page title
 			<div class="col">
 				<div class="">
 					<form action="#" class="course_search_form d-flex flex-md-row gap-2 flex-column align-items-start justify-content-between">
-						<div><input type="text" class="course_input" placeholder="Donation Fund" required="required"></div>
-						<div><input type="text" class="course_input" placeholder="Phone/ Email" required="required"></div>
+						<div>
+							<select class="course_input" required>
+								<option value="" disabled selected>Select Donation Category</option>
+								<option value="education">Education Support</option>
+								<option value="healthcare">Healthcare Aid</option>
+								<option value="food">Food & Nutrition</option>
+								<option value="disaster_relief">Disaster Relief</option>
+								<option value="orphan_support">Orphan Support</option>
+								<option value="mosque_fund">Mosque Fund</option>
+								<option value="environment">Environmental Projects</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+
+						<div><input type="text" class="course_input text-black" placeholder="Phone" required="required"></div>
 						<div><input type="text" class="course_input" placeholder="Donation Ammount" required="required"></div>
 						<button class="course_button"><span>Donate</span><span class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
 					</form>
@@ -175,14 +187,14 @@ $page_title = 'Home'; // Set the page title
 						<!-- Slider Item -->
 						<div class="owl-item">
 							<div class="course">
-								<div class="course_image"><img src="images/tree-plantation.webp" alt=""></div>
+								<div class="course_image"><a href="activities-details.php"><img src="images/tree-plantation.webp" alt=""></a></div>
 								<div class="course_body">
 									<div class="course_header d-flex flex-row align-items-center justify-content-start">
 										<div class="course_tag"><a href="#">Activities</a></div>
 
 									</div>
 									<div class="course_title">
-										<h3><a href="courses.html">Tree Plantation</a></h3>
+										<h3><a href="activities-details.php">Tree Plantation</a></h3>
 									</div>
 									<div class="course_text">Planting Tree is Sadaqah Jariyah.As Long as animals and other people benifite from the tree ,the one wo planted it will continue to earn ... </div>
 									<div class="course_footer d-flex align-items-center justify-content-start">
@@ -197,14 +209,14 @@ $page_title = 'Home'; // Set the page title
 						<!-- Slider Item -->
 						<div class="owl-item">
 							<div class="course">
-								<div class="course_image"><img src="images/self-reliance.webp" alt=""></div>
+								<div class="course_image"><a href="activities-details.php"><img src="images/self-reliance.webp" alt=""></a></div>
 								<div class="course_body">
 									<div class="course_header d-flex flex-row align-items-center justify-content-start">
 										<div class="course_tag"><a href="#">New</a></div>
 
 									</div>
 									<div class="course_title">
-										<h3><a href="courses.html">General Fund</a></h3>
+										<h3><a href="activities-details.php">General Fund</a></h3>
 									</div>
 									<div class="course_text">Planting Tree is Sadaqah Jariyah.As Long as animals and other people benifite from the tree ,the one wo planted it will continue to earn ...</div>
 									<div class="course_footer d-flex align-items-center justify-content-start">
@@ -219,14 +231,14 @@ $page_title = 'Home'; // Set the page title
 						<!-- Slider Item -->
 						<div class="owl-item">
 							<div class="course">
-								<div class="course_image"><img src="images/dawah-education.webp" alt="https://unsplash.com/@annademy"></div>
+								<div class="course_image"><a href="activities-details.php"><img src="images/dawah-education.webp" alt="https://unsplash.com/@annademy"></a></div>
 								<div class="course_body">
 									<div class="course_header d-flex flex-row align-items-center justify-content-start">
 										<div class="course_tag"><a href="#">Featured</a></div>
 
 									</div>
 									<div class="course_title">
-										<h3><a href="courses.html">Dawah</a></h3>
+										<h3><a href="activities-details.php">Dawah</a></h3>
 									</div>
 									<div class="course_text">Planting Tree is Sadaqah Jariyah.As Long as animals and other people benifite from the tree ,the one wo planted it will continue to earn ...</div>
 									<div class="course_footer d-flex align-items-center justify-content-start">
@@ -506,12 +518,7 @@ $page_title = 'Home'; // Set the page title
 						<!-- Video poster image artist: https://unsplash.com/@annademy -->
 						<!-- <video id="vid1" class="video-js vjs-default-skin" controls data-setup='{ "poster": "images/video.jpg", "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=wShlz3zKWHo"}], "youtube": { "iv_load_policy": 1 } }'>
 							</video> -->
-						<iframe width="100%" height="100%"
-							src="https://www.youtube.com/embed/Ki_8YzLoUv8"
-
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen>
-						</iframe>
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/7Y757eEzZlk?si=St5TWqWSxHTgD9RS" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>

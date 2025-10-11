@@ -11,35 +11,35 @@ const activities = [
     tag: "Regular Projects",
     title: "Relief Program",
     link: "activities-details.php",
-    text: "Providing Relief to the women in need which is a for supporting the society",
+    text: "Financial Support For Madrasha Students which are needed for poor students",
   },
   {
     image: "images/Financial Support For Madrasha Students.jpeg",
     tag: "Regular Projects",
     title: "Meritorious Program",
     link: "activities-details.php",
-    text: "Aninitiative to build a generation with honestly,competence and humanitarian...",
+    text: "Financial Support For Madrasha Students which are needed for poor students",
   },
   {
     image: "images/act4.webp",
     tag: "Regular Projects",
     title: "Meritorious Program",
     link: "activities-details.php",
-    text: "Aninitiative to build a generation with honestly,competence and humanitarian...",
+    text: "Financial Support For Madrasha Students which are needed for poor students",
   },
   {
     image: "images/act5.webp",
     tag: "Regular Projects",
     title: "Meritorious Program",
     link: "activities-details.php",
-    text: "Aninitiative to build a generation with honestly,competence and humanitarian...",
+    text: "Financial Support For Madrasha Students which are needed for poor students",
   },
   {
     image: "images/act6.webp",
     tag: "Regular Projects",
     title: "Meritorious Program",
     link: "activities-details.php",
-    text: "Aninitiative to build a generation with honestly,competence and humanitarian...",
+    text: "Financial Support For Madrasha Students which are needed for poor students",
   },
 
 
@@ -57,7 +57,7 @@ const activities = [
           
           </div>
           <div class="course_title truncated-title "><h3><a href="${activities.link}" >${activities.title}</a></h3></div>
-          <div class="course_text truncated-text">${activities.text}</div>
+          <div class="course_text text-elipsis">${activities.text}</div>
           							<div class="button button_1"><a href="activities-details.php">See details<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
           <div class="course_footer d-flex align-items-center justify-content-start">
           </div>

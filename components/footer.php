@@ -101,6 +101,7 @@
 			<script src="styles/bootstrap4/bootstrap.min.js"></script>
 			<script src="plugins/easing/easing.js"></script>
 			<script src="plugins/parallax-js-master/parallax.min.js"></script>
+			<script src="js/activitiesDetails.js"></script>
 			<script src="js/news.js"></script>
 			<?php
 		}
@@ -111,6 +112,7 @@
 			<script src="styles/bootstrap4/bootstrap.min.js"></script>
 			<script src="plugins/easing/easing.js"></script>
 			<script src="plugins/parallax-js-master/parallax.min.js"></script>
+			<script src="js/donate.js"></script>
 			<script src="js/news.js"></script>
 			<?php
 		}

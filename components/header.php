@@ -89,10 +89,11 @@ require 'database/dbConnection.php';
 
 	<div class="super_container">
 
+
 		<!-- Header -->
 		<header class="header">
 
-			
+
 			<?php require 'nav-bar.php'; ?>
 
 			<?php require 'header-search-panel.php'; ?>
