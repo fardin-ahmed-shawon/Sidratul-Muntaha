@@ -160,7 +160,10 @@
 
      /* Nav end */
      /* Home page css Start   */
-
+.parallax-window {
+    min-height: 308px;
+    background: transparent;
+}
      /* Banner Section start  */
 
      .button {
@@ -322,7 +325,7 @@
          background: #06CC6B;
      }
 
-     .course_body {
+   .home-page .course_body {
          width: 100%;
          padding-left: 34px;
          padding-right: 32px;

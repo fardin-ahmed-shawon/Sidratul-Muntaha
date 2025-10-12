@@ -11,25 +11,27 @@ $page_title = 'Donation List';
     <div class="donation-list">
         <!-- Page Header -->
         <div class="page-header">
-            <div class="w-100 d-flex flex-wrap justify-content-between align-items-center gap-3">
-                <div class="d-flex align-items-center gap-3">
+            <div class="w-100">
+                
+                <div class="d-flex justify-content-start gap-3">
                     <div class="icon-box">
                         <i class="fa-solid fa-hand-holding-dollar"></i>
                     </div>
-                    <div>
-                        <h1>Donation List</h1>
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item"><a href="index.php" class="text-decoration-none">Dashboard</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Donation List</li>
-                            </ol>
-                        </nav>
-                    </div>
+                    <h1 class="mb-0 pb-1">Donation List</h1>
                 </div>
 
-                <a class="btn btn-add-new" href='../donate.php' target="">
-                    <i class="fa-solid fa-plus me-1"></i> Add New Donation
-                </a>
+                <div class="d-flex justify-content-between align-items-center gap-3">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="index.php" class="text-decoration-none">Dashboard</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Donation List</li>
+                        </ol>
+                    </nav>
+                    <a class="btn btn-primary py-2 px-3" href='../donate.php' target="">
+                        <i class="fa-solid fa-plus me-1"></i> Add New Donation
+                    </a>
+                </div>
+                
             </div>
         </div>
 

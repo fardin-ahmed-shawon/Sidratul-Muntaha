@@ -101,7 +101,7 @@ $page_title = 'Home'; // Set the page title
 </div>
 
 <!-- Featured Course -->
-<div class="featured my-5">
+<div class=" featured my-5">
 	<div class="container">
 		<div class="row">
 			<div class="col">
@@ -139,7 +139,7 @@ $page_title = 'Home'; // Set the page title
 </div>
 
 <!-- Courses -->
-<div class="courses">
+<div class="home-page courses">
 	<div class="container">
 		<div class="row donate-form-bg">
 			<div class="col-lg-10 offset-lg-1 ">
@@ -309,6 +309,67 @@ $page_title = 'Home'; // Set the page title
 	</div>
 </div> -->
 
+
+
+<!-- Video -->
+<div class="video">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="video_container_outer">
+					<div class="video_container">
+						<!-- Video poster image artist: https://unsplash.com/@annademy -->
+						<!-- <video id="vid1" class="video-js vjs-default-skin" controls data-setup='{ "poster": "images/video.jpg", "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=wShlz3zKWHo"}], "youtube": { "iv_load_policy": 1 } }'>
+							</video> -->
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/7Y757eEzZlk?si=St5TWqWSxHTgD9RS" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Photos   -->
+<div class="photos">
+	<div class="container py-5">
+		<h1 class="text-center py-2">Photos</h1>
+		<div class="row pt-3 ">
+
+			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
+				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (7).jpeg" data-lightbox="news-gallery">
+					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (7).jpeg" alt="" class="img-fluid ">
+				</a>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
+				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (2).jpeg" data-lightbox="news-gallery">
+					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (2).jpeg" alt="" class="img-fluid ">
+				</a>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
+				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (3).jpeg" data-lightbox="news-gallery">
+					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (3).jpeg" alt="" class="img-fluid ">
+				</a>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
+				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (4).jpeg" data-lightbox="news-gallery">
+					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (4).jpeg" alt="" class="img-fluid ">
+				</a>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
+				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (5).jpeg" data-lightbox="news-gallery">
+					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (5).jpeg" alt="" class="img-fluid ">
+				</a>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
+				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (8).jpeg" data-lightbox="news-gallery">
+					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (8).jpeg" alt="images/whats" class="img-fluid ">
+				</a>
+			</div>
+		</div>
+		<div class="d-flex justify-content-center mt-4">
+			<button class="course_button "><a href="gallery.php"><span>See More</span><span class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a></button>
+		</div>
+	</div>
+</div>
 <!-- Sections -->
 <div class="grouped_sections">
 	<div class="container">
@@ -504,66 +565,6 @@ $page_title = 'Home'; // Set the page title
 
 				</div>
 			</div>
-		</div>
-	</div>
-</div>
-
-<!-- Video -->
-<div class="video">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<div class="video_container_outer">
-					<div class="video_container">
-						<!-- Video poster image artist: https://unsplash.com/@annademy -->
-						<!-- <video id="vid1" class="video-js vjs-default-skin" controls data-setup='{ "poster": "images/video.jpg", "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=wShlz3zKWHo"}], "youtube": { "iv_load_policy": 1 } }'>
-							</video> -->
-					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/7Y757eEzZlk?si=St5TWqWSxHTgD9RS" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Photos   -->
-<div class="photos">
-	<div class="container py-5">
-		<h1 class="text-center py-2">Photos</h1>
-		<div class="row pt-3 ">
-
-			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
-				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (7).jpeg" data-lightbox="news-gallery">
-					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (7).jpeg" alt="" class="img-fluid ">
-				</a>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
-				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (2).jpeg" data-lightbox="news-gallery">
-					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (2).jpeg" alt="" class="img-fluid ">
-				</a>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
-				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (3).jpeg" data-lightbox="news-gallery">
-					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (3).jpeg" alt="" class="img-fluid ">
-				</a>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
-				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (4).jpeg" data-lightbox="news-gallery">
-					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (4).jpeg" alt="" class="img-fluid ">
-				</a>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
-				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (5).jpeg" data-lightbox="news-gallery">
-					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (5).jpeg" alt="" class="img-fluid ">
-				</a>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
-				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (8).jpeg" data-lightbox="news-gallery">
-					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (8).jpeg" alt="images/whats" class="img-fluid ">
-				</a>
-			</div>
-		</div>
-		<div class="d-flex justify-content-center mt-4">
-			<button class="course_button "><a href="gallery.php"><span>See More</span><span class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a></button>
 		</div>
 	</div>
 </div>
