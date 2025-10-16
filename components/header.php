@@ -5,16 +5,13 @@ require 'database/dbConnection.php';
 <html lang="en">
 
 <head>
-
-	<title>Sidratul Muntaha</title>
 	<base href="<?= $site_url ?>" />
-
 	<!-- Favicon -->
-	<link rel="icon" type="image/x-icon" href="" />
+	<link rel="icon" type="image/x-icon" href="images/sidratul logo.png" />
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="Sidratul Muntaha - is a donation platform">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -30,6 +27,10 @@ require 'database/dbConnection.php';
 	<?php
 	if ($current_page == 'index.php') {
 	?>
+
+		<title>Sidratul Muntaha Foundation</title>
+		<meta name="description" content="Sidratul Muntaha Foundation - is a non-political, non-profit government-registered organization dedicated to education, da'wah and total human welfare. Registration Number: S-14117/2024 .">
+
 		<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 		<link rel="stylesheet" type="text/css" href="styles/responsive.css">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
@@ -37,6 +38,10 @@ require 'database/dbConnection.php';
 	<?php
 	} else if ($current_page == 'about.php') {
 	?>
+
+		<title>About Us</title>
+		<meta name="description" content="Sidratul Muntaha is a non-political, non-profit government-registered organization dedicated to education, da'wah and total human welfare">
+
 		<link rel="stylesheet" type="text/css" href="styles/about.css">
 		<link rel="stylesheet" type="text/css" href="styles/about_responsive.css">
 		<link rel="stylesheet" href="styles/elements.css">
@@ -44,16 +49,28 @@ require 'database/dbConnection.php';
 	<?php
 	} else if ($current_page == 'contact.php') {
 	?>
+
+		<title>Contact Us</title>
+		<meta name="description" content="Sidratul Muntaha - is a non-political, non-profit government-registered organization dedicated to education, da'wah and total human welfare. Registration Number: S-14117/2024 .">
+
 		<link rel="stylesheet" type="text/css" href="styles/contact.css">
 		<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
 	<?php
 	} else if ($current_page == 'activities.php') {
 	?>
+
+		<title>Activities</title>
+		<meta name="description" content="Sidratul Muntaha Foundation’s activities: orphan care, education programs, food distribution, medical support, dawah projects, and community development inspired by Sunnah.">
+
 		<link rel="stylesheet" type="text/css" href="styles/courses.css">
 		<link rel="stylesheet" type="text/css" href="styles/courses_responsive.css">
 	<?php
 	} else if ($current_page == 'gallery.php') {
 	?>
+
+		<title>Gallery</title>
+		<meta name="description" content="Empowering lives through faith and service, organizes charity drives, educational initiatives, healthcare support, and humanitarian aid across communities">
+		
 		<link rel="stylesheet" type="text/css" href="styles/news.css">
 		<link rel="stylesheet" type="text/css" href="styles/news_responsive.css">
 		<!-- Lightbox2 CSS and JS -->
@@ -61,26 +78,45 @@ require 'database/dbConnection.php';
 	<?php
 	} else if ($current_page == 'notice.php') {
 	?>
+
+		<title>Sidratul Muntaha Foundation</title>
+		<meta name="description" content="Sidratul Muntaha Foundation - is a non-political, non-profit government-registered organization dedicated to education, da'wah and total human welfare. Registration Number: S-14117/2024 .">
+
 		<link rel="stylesheet" type="text/css" href="styles/news.css">
 		<link rel="stylesheet" type="text/css" href="styles/news_responsive.css">
 	<?php
 	} else if ($current_page == 'notice-details.php') {
 	?>
+
+		<title>Sidratul Muntaha Foundation</title>
+		<meta name="description" content="Sidratul Muntaha Foundation - is a non-political, non-profit government-registered organization dedicated to education, da'wah and total human welfare. Registration Number: S-14117/2024 .">
+
 		<link rel="stylesheet" type="text/css" href="styles/news.css">
 		<link rel="stylesheet" type="text/css" href="styles/news_responsive.css">
 	<?php
 	} else if ($current_page == 'activities-details.php') {
 	?>
+
+		<title>Sidratul Muntaha Foundation</title>
+		<meta name="description" content="Sidratul Muntaha Foundation - is a non-political, non-profit government-registered organization dedicated to education, da'wah and total human welfare. Registration Number: S-14117/2024 .">
+
 		<link rel="stylesheet" type="text/css" href="styles/news.css">
 		<link rel="stylesheet" type="text/css" href="styles/news_responsive.css">
 	<?php
 	} else if ($current_page == 'donate.php') {
 	?>
+
+		<title>Donate Now – Sidratul Muntaha Foundation</title>
+		<meta name="description" content="Donate to Sidratul Muntaha Foundation and make a lasting impact through charity, education, healthcare, and community welfare programs.">
+		
 		<link rel="stylesheet" type="text/css" href="styles/news.css">
 		<link rel="stylesheet" type="text/css" href="styles/news_responsive.css">
 	<?php
 	} else if ($current_page == 'donation-fund.php') {
 	?>
+		<title>Sidratul Muntaha Foundation</title>
+		<meta name="description" content="Give from the heart. Sidratul Muntaha Foundation uses your donations to support the poor, fund education, and spread kindness through service.">
+
 		<link rel="stylesheet" type="text/css" href="styles/courses.css">
 		<link rel="stylesheet" type="text/css" href="styles/courses_responsive.css">
 	<?php
