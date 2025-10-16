@@ -62,7 +62,7 @@ $page_title = 'Home'; // Set the page title
 		data-aos="fade-right"
 		 class="content container px-4">
 			<h1>Sidratul Muntaha Foundation</h1>
-			<p>Sidratul Muntaha Foundation is a non-political, non-profit government-registered organization dedicated to education, da'wah and total human welfare. Registration Number: .</p>
+			<p>Sidratul Muntaha Foundation is a non-political, non-profit government-registered organization dedicated to education, da'wah and total human welfare. Registration Number: S-14117/2024 .</p>
 			<div class="buttons">
 				<a href="about.php" class="btn">Know More</a>
 				<a href="activities.php" class="btn btn-outline"> Activities</a>

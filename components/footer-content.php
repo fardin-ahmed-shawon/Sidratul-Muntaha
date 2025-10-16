@@ -65,7 +65,7 @@
     						<div class="footer_contact_info">
     							<div class="footer_contact_item">
     								<div class="footer_contact_title">Address:</div>
-    								<div class="footer_contact_line">1481 Creekside Lane Avila Beach, CA 93424</div>
+    								<div class="footer_contact_line">Mirpur Tower, Level-12, Suit-12/C, 4 Darus Salam Road, Mirput-1, Dhaka-1216</div>
     							</div>
     							<div class="footer_contact_item">
     								<div class="footer_contact_title">Phone:</div>
