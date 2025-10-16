@@ -43,11 +43,13 @@ $page_title = 'Blank'; // Set the page title
 		<div class="col-md-12 col-lg-6 program-details">
 			<h2>Program Details</h2>
 			<img src="images/act1.webp" alt="" class="w-75 rounded-5">
-			<p class="fs-6 fw-bold py-2">As-Sunnah Skill Development Institute is an institution for self-development and skill enhancement. This affiliate of the As-Sunnah Foundation, registered with the National Skill Development Authority, was established in 2022. Since its inception, it has been working to bring information technology and technical education to all levels of society, with the goal of eliminating unemployment and creating employment opportunities.</p>
+			<p class="fs-6 fw-bold py-2">Sidratul Skill Development Institute is an institution for self-development and skill enhancement. This affiliate of the As-Sunnah Foundation, registered with the National Skill Development Authority, was established in 2022. Since its inception, it has been working to bring information technology and technical education to all levels of society, with the goal of eliminating unemployment and creating employment opportunities.</p>
 			<p>The specialty of this institute is that it provides computer, information technology, and various technical training courses in a completely separate environment and with suitable curricula for both men and women. There are also special scholarships for talented and underprivileged students, enabling them to receive training free of charge.</p>
 			<p>By developing skilled human resources, this institute has already started to solidify its position as an effective tool for alleviating the country's unemployment problem and fostering self-employment</p>
 		</div>
-		<div class="col-md-12 col-lg-6">
+		<div 
+		data-aos="fade-up"
+		class="col-md-12 col-lg-6">
 			<div class="p-4 card-bg">
 				<h4>Project Goals & Objectives</h4>
 				<ul>
@@ -139,7 +141,9 @@ $page_title = 'Blank'; // Set the page title
 <!-- Program details end  -->
 
  <!-- Donate card start  -->
-  <div class="container">
+  <div
+ data-aos="fade-up" 
+  class="container">
 	<div class="d-flex justify-content-center align-items-center">
 		<div class="donate_card_bg">
 	<div class="cardp">

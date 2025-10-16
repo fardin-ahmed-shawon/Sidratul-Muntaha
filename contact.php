@@ -18,7 +18,7 @@ $page_title = 'Contact'; // Set the page title
 				<div class="row">
 					<div class="col">
 						<div class="home_content text-center">
-							<div class="home_title">Contact</div>
+							<div data-aos="fade-up" class="home_title">Contact</div>
 							<div class="breadcrumbs">
 								<ul>
 									<li><a href="index.php">Home</a></li>
@@ -42,7 +42,7 @@ $page_title = 'Contact'; // Set the page title
 					<div class="contact_content">
 						<div class="row">
 							<div class="col-xl-12">
-								<div class="contact_info_container">
+								<div data-aos="fade-up" data-aos-delay="300"  class="contact_info_container">
 									<div class="contact_info_main_title">Contact Us</div>
 									<div class="contact_info">
 										<div class="contact_info_item">
@@ -61,7 +61,7 @@ $page_title = 'Contact'; // Set the page title
 								</div>
 							</div>
 						</div>
-						<div class="contact_form_container">
+						<div data-aos="fade-up"  class="contact_form_container">
 							<form action="#" id="contact_form" class="contact_form">
 								<div>
 									<div class="row">

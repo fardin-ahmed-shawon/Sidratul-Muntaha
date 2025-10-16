@@ -16,7 +16,7 @@ $page_title = 'Donate';
                 <div class="row">
                     <div class="col">
                         <div class="home_content text-center">
-                            <div class="home_title">Donate Now</div>
+                            <div data-aos="fade-up" class="home_title">Donate Now</div>
                             <div class="breadcrumbs">
                                 <ul>
                                     <li><a href="index.php">Home</a></li>
@@ -34,7 +34,7 @@ $page_title = 'Donate';
 <div class="donate-page ">
     <div class="container">
         <div class="row ">
-            <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+            <div data-aos="fade-up" class="col-lg-6 col-md-12 mb-4 mb-lg-0">
                 <div>
                     <h3 class="section-title">Make a Difference Today</h3>
                     <p class="section-description">
@@ -58,7 +58,7 @@ $page_title = 'Donate';
                     <!-- Header -->
                     <div class="card-header-custom">
                         <h4>হাত বাড়ান দুর্গতের প্রতি</h4>
-                        <p>বন্যা, ঘূর্ণিঝড়, অগ্নিকাণ্ড—প্রতিটি দুর্যোগে অসহায় মানুষের পাশে আছে আস-সুন্নাহ ফাউন্ডেশন। এই মানবিক অভিযাত্রায় আপনিও আমাদের সঙ্গী হতে পারেন।</p>
+                        <p>বন্যা, ঘূর্ণিঝড়, অগ্নিকাণ্ড—প্রতিটি দুর্যোগে অসহায় মানুষের পাশে আছে সিদরাতুল মুনতাহা ফাউন্ডেশন। এই মানবিক অভিযাত্রায় আপনিও আমাদের সঙ্গী হতে পারেন।</p>
                     </div>
 
                     <!-- Body -->

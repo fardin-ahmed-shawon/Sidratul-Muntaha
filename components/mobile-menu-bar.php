@@ -1,17 +1,29 @@
     <!-- Mobile Menu Bar -->
     <div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
-    	<div class="menu_close_container">
-    		<div class="menu_close">
-    			<div></div>
-    			<div></div>
+    	<div class="my-2 d-flex  justify-content-between w-100 gap-1 border-bottom">
+    		<div class="logo_container">
+    			<a href="index.php">
+    				<div class="logo_content d-flex justify-content-between">
+    					<div class="logo_img me-1">
+    						<img src="images/sidratul logo.png" alt="sidratul logo.png" class="img-fluid">
+    					</div>
+				<p class="mobile_nav_title">Sidratul <br> Muntaha </p>
+    				</div>
+    			</a>
+    		</div>
+    		<div class="menu_close_container mt-2 pt-1">
+    			<div class="menu_close">
+    				<div></div>
+    				<div></div>
+    			</div>
     		</div>
     	</div>
-    	<div class="search">
+    	<!-- <div class="search">
     		<form action="#" class="header_search_form menu_mm">
-    		
+
 
     		</form>
-    	</div>
+    	</div> -->
     	<nav class="menu_nav">
     		<ul class="menu_mm">
     			<li class="menu_mm"><a href="index.php">Home</a></li>
@@ -22,11 +34,11 @@
     			<li class="menu_mm"><a href="notice.php">Notice</a></li>
     			<li class="menu_mm"><a href="donate.php">Donate</a></li>
     			<li class="menu_mm"><a href="donate.php">
-					
-				</a></li>
 
-    				
-					
+    				</a></li>
+
+
+
     		</ul>
     	</nav>
     	<div class="menu_extra">

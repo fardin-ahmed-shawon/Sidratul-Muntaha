@@ -21,7 +21,7 @@ $page_title = 'Gallery'; // Set the page title
             <div class="row">
                 <div class="col">
                     <div class="home_content text-center">
-                        <div class="home_title">Gallery</div>
+                        <div data-aos="fade-up" class="home_title">Gallery</div>
                         <div class="breadcrumbs">
                             <ul>
                                 <li><a href="index.php">Home</a></li>

@@ -18,18 +18,19 @@ $page_title = 'Contact'; // Set the page title
 <!-- Home -->
 <div class="about-home">
 	<div class="home">
-	<div class="home_background parallax_background parallax-window" data-parallax="scroll" data-image-src="images/about.jpg" data-speed="0.8"></div>
-	<div class="home_container">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="home_content text-center">
-						<div class="home_title">About</div>
-						<div class="breadcrumbs">
-							<ul>
-								<li><a href="index.php">Home</a></li>
-								<li>About</li>
-							</ul>
+		<div class="home_background parallax_background parallax-window" data-parallax="scroll" data-image-src="images/about.jpg" data-speed="0.8"></div>
+		<div class="home_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_content text-center">
+							<div data-aos="fade-up" class="home_title">About</div>
+							<div class="breadcrumbs">
+								<ul>
+									<li><a href="index.php">Home</a></li>
+									<li>About</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -37,14 +38,16 @@ $page_title = 'Contact'; // Set the page title
 		</div>
 	</div>
 </div>
-</div>
 
 <div class="container my-5">
 	<!-- About -->
 	<div class="about">
 		<div class="container">
 
-			<div class="row">
+			<div
+				data-aos="fade-up"
+					data-aos-delay="300"
+				class="row">
 
 				<div class="col-lg-6 mt-3">
 					<div class="about_content">
@@ -75,7 +78,10 @@ $page_title = 'Contact'; // Set the page title
 							<div class="tab">Humanitarian</div>
 						</div>
 
-						<div class="tab_panels">
+						<div
+							data-aos="fade-up"
+							data-aos-delay="400"
+							class="tab_panels">
 							<!-- Education -->
 							<div class="tab_panel active">
 								<div class="tab_panel_content">

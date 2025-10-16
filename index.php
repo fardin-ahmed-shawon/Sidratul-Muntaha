@@ -4,10 +4,50 @@ $page_title = 'Home'; // Set the page title
 ?>
 <?php require './components/header.php'; ?>
 <style>
+	.join {
+    position: absolute;
+    top: -41%;
+    left: 0%;
+    background: transparent;
+}
+.footer {
+    width: 100%;
+    background: #0F2920;
+    color: #fff;
+    padding-top: 174px;
+    padding-bottom: 50px;
+}
+	@media(max-width:991px) {
+		.join-input {
+    width: 58%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+}
+.join {
+    position: absolute;
+    top: -16%;
+    left: 0%;
+    background: transparent;
+}
+	}
 	@media(max-width:575px) {
 		.home_container {
 			bottom: 145px;
 		}
+		.join {
+    position: absolute;
+    top: -16%;
+    left: 3%;
+    background: transparent;
+}
+.footer {
+
+    padding-top: 228px;
+    padding-bottom: 50px;
+}
 	}
 </style>
 <!--=======================================================================-->
@@ -15,145 +55,44 @@ $page_title = 'Home'; // Set the page title
 <!--=======================================================================-->
 
 <!-- Home -->
-<div class="home">
-	<div class="home_slider_container">
-
-		<!-- Home Slider -->
-		<div class="owl-carousel owl-theme home_slider">
-
-			<!-- Slider Item -->
-			<div class="owl-item">
-				<!-- Background image artist https://unsplash.com/@benwhitephotography -->
-				<div class="home_slider_background" style="background-image: linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.5)),url(images/Banner.jpg);background-repeat:no-repeat;background-position:center;"></div>
-				<div class="home_container">
-					<div class="container">
-						<div class="row">
-							<div class="col">
-								<div class="home_content text-center">
-
-									<div class="home_text">
-										<div class="home_title">Sidratul Muntaha Foundation</div>
-										<div class="home_subtitle">Sidratul Muntaha Foundation is a non-political, non-profit government-registered organization dedicated to education, da'wah and total human welfare. Registration Number: .</div>
-									</div>
-									<div class="home_buttons">
-										<div class="button home_button"><a href="activities-details.php">Know more<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
-										<div class="button home_button"><a href="activities.php">All Activities<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+<div class=" home">
+	<div class="home-background">
+		<div class="overlay"></div>
+		<div
+		data-aos="fade-right"
+		 class="content container px-4">
+			<h1>Sidratul Muntaha Foundation</h1>
+			<p>Sidratul Muntaha Foundation is a non-political, non-profit government-registered organization dedicated to education, da'wah and total human welfare. Registration Number: .</p>
+			<div class="buttons">
+				<a href="about.php" class="btn">Know More</a>
+				<a href="activities.php" class="btn btn-outline"> Activities</a>
 			</div>
-
-			<!-- Slider Item -->
-			<div class="owl-item">
-				<!-- Background image artist https://unsplash.com/@benwhitephotography -->
-				<div class="home_slider_background" style="background-image: linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.5)),url(images/Banner2.jpg);background-repeat:no-repeat;background-position:center;"></div>
-				<div class="home_container">
-					<div class="container">
-						<div class="row">
-							<div class="col">
-								<div class="home_content text-center">
-
-									<div class="home_text">
-										<div class="home_title">Sidratul Muntaha Foundation</div>
-										<div class="home_subtitle">Sidratul Muntaha Foundation is a non-political, non-profit government-registered organization dedicated to education, da'wah and total human welfare. Registration Number: .</div>
-									</div>
-									<div class="home_buttons">
-										<div class="button home_button"><a href="activities-details.php">Know more<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
-										<div class="button home_button"><a href="activities.php">All Activities<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- Slider Item -->
-			<div class="owl-item">
-				<!-- Background image artist https://unsplash.com/@benwhitephotography -->
-				<div class="home_slider_background" style="background-image:linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.5)),url(images/Banner3.jpg)"></div>
-				<div class="home_container">
-					<div class="container">
-						<div class="row">
-							<div class="col">
-								<div class="home_content text-center">
-
-									<div class="home_text">
-										<div class="home_title">Sidratul Muntaha Foundation</div>
-										<div class="home_subtitle">Sidratul Muntaha Foundation is a non-political, non-profit government-registered organization dedicated to education, da'wah and total human welfare. Registration Number: .</div>
-									</div>
-									<div class="home_buttons">
-										<div class="button home_button"><a href="activities-details.php">Know more<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
-										<div class="button home_button"><a href="activities.php">All Activities<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
 		</div>
 	</div>
+
 </div>
+
 
 <!-- Featured Course -->
-<div class=" featured my-5">
-	<div class="container">
-		<div class="row">
-			<div class="col">
 
-				<div class="home_slider_nav_container d-flex flex-row align-items-start justify-content-between">
-					<div class="home_slider_nav home_slider_prev trans_200"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-					<div class="home_slider_nav home_slider_next trans_200"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-				</div>
-				<div class="featured_container">
-					<div class="row">
-						<div class="col-lg-6 featured_col">
-							<div class="featured_content">
-								<div class="featured_header d-flex flex-row align-items-center justify-content-start">
-
-								</div>
-								<div class="featured_title">
-									<h3><a href="activities.php">For Ummah, With Sunnah</a></h3>
-								</div>
-								<div class="featured_text ">The Ummah represents a powerful bond of unity among Muslims. Regardless of where they live or their cultural backgrounds, Muslims are considered part of one large family</div> <br />
-								<div class="featured_footer d-flex align-items-center justify-content-start">
-									<div class="featured_author_image"><img src="images/belowBanner.jpg" alt=""></div>
-									<div class="featured_author_name">By <a href="#">a Muslim</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 featured_col">
-
-							<div class="featured_background" style="background-image:url(images/belowBanner.jpg)"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
 
 <!-- Courses -->
 <div class="home-page courses">
 	<div class="container">
-		<div class="row donate-form-bg">
+		<div class="row donate-form-bg mx-auto">
 			<div class="col-lg-10 offset-lg-1 ">
 				<div class="section_title text-center">
 					<h2>Make Your Donation</h2>
 				</div>
-				<div class="section_subtitle">Planting Tree is Sadaqah Jariyah.As Long as animals and other people benifite from the tree ,the one wo planted it will continue to earn ...</div>
+
 			</div>
 			<div class="col">
 				<div class="">
-					<form action="#" class="course_search_form d-flex flex-md-row gap-2 flex-column align-items-start justify-content-between">
+					<form action="#" class="mt-3 course_search_form d-flex flex-md-row gap-2 flex-column align-items-start justify-content-between">
 						<div>
+							<label class="course-lable">Donation Fund<span>*</span></label>
 							<select class="course_input" required>
-								<option value="" disabled selected>Select Donation Category</option>
+								<option value="" disabled selected class="p-2">Select Donation Category</option>
 								<option value="education">Education Support</option>
 								<option value="healthcare">Healthcare Aid</option>
 								<option value="food">Food & Nutrition</option>
@@ -165,14 +104,64 @@ $page_title = 'Home'; // Set the page title
 							</select>
 						</div>
 
-						<div><input type="text" class="course_input text-black" placeholder="Phone" required="required"></div>
-						<div><input type="text" class="course_input" placeholder="Donation Ammount" required="required"></div>
-						<button class="course_button"><span>Donate</span><span class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
+						<div>
+							<label class="course-lable">Mobile No. <span>*</span></label>
+							<input type="text" class="course_input " placeholder="Phone" required="required">
+						</div>
+						<div>
+							<label class="course-lable">Ammount <span>*</span></label>
+							<input type="text" class="course_input" placeholder="Donation Ammount" required="required">
+						</div>
+						<div class="btn-margin"><button class="course_button "><span>Donate</span><span class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></button></div>
 					</form>
+					<div class="section_subtitle">You may receive tax relief when you donate to Sidratul Muntaha Foundation.</div>
+				</div>
+			</div>
+		</div>
+		<div class="section_title">
+			<h2 class="text-center  pt-5 pb-2 ">For Ummah, With Sunnah</h2>
+		</div>
+		<div
+			data-aos="fade-up"
+			class="about-quotes mb-5">
+			<div class="container mx-auto">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-4">
+
+						<div class=" quote-item d-flex flex-column justify-content-center align-items-center">
+							<i class="fa fa-graduation-cap " aria-hidden="true"></i>
+							<h1 class="text-sm-center">Education</h1>
+							<p class="text-sm-center">Establishing and managing madrasas with an integrated syllabus of religious and general education to produce distinguished Islamic scholars and contemporary da'wah practitioners.</p>
+						</div>
+
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4">
+
+						<div class=" quote-item d-flex flex-column justify-content-center align-items-center">
+							<i class="fa fa-handshake-o" aria-hidden="true"></i>
+							<h1 class="text-sm-center">Service</h1>
+							<p class="text-sm-center">Empowering the poor, providing relief and rehabilitation for flood victims, installing tube wells and water purification plants, tree plantation, distributing winter clothing, Iftar meals, and organizing inclusive Qurbani programs, among other welfare activities.</p>
+						</div>
+
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4">
+
+						<div class=" quote-item d-flex flex-column justify-content-center align-items-center">
+							<i class="fa fa-book" aria-hidden="true"></i>
+							<h1 class="text-sm-center">Dawah</h1>
+							<p class="text-sm-center">Online-based da'wah, writing and publishing Islamic books, conducting religious study circles, and organizing training programs and workshops for Islamic outreach.</p>
+						</div>
+
+					</div>
+
+
 				</div>
 			</div>
 		</div>
 
+		<div class="about-quote-btn">
+			<a href="about.php">See More</a>
+		</div>
 		<div class="row">
 			<div class="col">
 
@@ -262,6 +251,93 @@ $page_title = 'Home'; // Set the page title
 	</div>
 </div>
 
+<!-- Donation Category  -->
+<div class="container mx-auto mb-5">
+	<div class="section_title text-center pb-5">
+		<h2>Donation Fund</h2>
+	</div>
+	<div
+		data-aos="fade-up"
+		data-aos-delay="500"
+		class="row">
+		<div class="col-sm-6 col-md-6 col-lg-4">
+			<div class="donate-preview_item">
+				<div class="course">
+					<div class="course_image"><a href="donate.php"><img src="images/regular donation.jpg" alt="" class="w-100"></a></div>
+					<div class="course_body ">
+						<div class="course_title ">
+							<h3 class=""><a href="donate.php">Regular Donation Fund</a></h3>
+						</div>
+						<div class="course_text text-truncated">Many people want to donate regularly but often forget to do so.From now on, bKash-Nagad App and Visa-Mastercard users can make regular donations from the As-Sunnah Foundation website by activating the automated system. On our website, you can choose from daily, or monthly donation options and select the amount. Even if you forget, the specified amount will be credited to the foundation's account at the scheduled time.
+
+							Users can opt out of this feature at any time.</div>
+						<div class="course_footer d-flex align-items-center justify-content-start">
+							<!-- <div class="course_author_image"><img src="images/featured_author.jpg" alt="https://unsplash.com/@anthonytran"></div>
+											<div class="course_author_name">By <a href="#">James S. Morrison</a></div>
+											<div class="course_sales ml-auto"><span>352</span> Sales</div> -->
+						</div>
+						<div class="d-flex justify-content-center">
+							<a href="donate.php" class=" donate-preview_item-btn">Donate Fund</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-6 col-lg-4">
+
+			<div class="donate-preview_item">
+				<div class="course">
+					<div class="course_image"><a href="donate.php"><img src="images/tree-plantation.jpg" alt="" class="w-100"></a></div>
+					<div class="course_body ">
+						<div class="course_title ">
+							<h3 class=""><a href="donate.php">General Fund</a></h3>
+						</div>
+						<div class="course_text text-truncated">Many people want to donate regularly but often forget to do so.From now on, bKash-Nagad App and Visa-Mastercard users can make regular donations from the As-Sunnah Foundation website by activating the automated system. On our website, you can choose from daily, or monthly donation options and select the amount. Even if you forget, the specified amount will be credited to the foundation's account at the scheduled time.
+
+							Users can opt out of this feature at any time.</div>
+						<div class="course_footer d-flex align-items-center justify-content-start">
+							<!-- <div class="course_author_image"><img src="images/featured_author.jpg" alt="https://unsplash.com/@anthonytran"></div>
+											<div class="course_author_name">By <a href="#">James S. Morrison</a></div>
+											<div class="course_sales ml-auto"><span>352</span> Sales</div> -->
+						</div>
+						<div class="d-flex justify-content-center">
+							<a href="donate.php" class=" donate-preview_item-btn">Donate Fund</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-6 col-lg-4">
+
+			<div class="donate-preview_item">
+				<div class="course">
+					<div class="course_image"><a href="donate.php"><img src="images/sadaqah.jpg" alt="" class="w-100"></a></div>
+					<div class="course_body ">
+						<div class="course_title ">
+							<h3 class=""><a href="donate.php">Sadaquah Jariyah</a></h3>
+						</div>
+						<div class="course_text text-truncated">Many people want to donate regularly but often forget to do so.From now on, bKash-Nagad App and Visa-Mastercard users can make regular donations from the As-Sunnah Foundation website by activating the automated system. On our website, you can choose from daily, or monthly donation options and select the amount. Even if you forget, the specified amount will be credited to the foundation's account at the scheduled time.
+
+							Users can opt out of this feature at any time.</div>
+						<div class="course_footer d-flex align-items-center justify-content-start">
+							<!-- <div class="course_author_image"><img src="images/featured_author.jpg" alt="https://unsplash.com/@anthonytran"></div>
+											<div class="course_author_name">By <a href="#">James S. Morrison</a></div>
+											<div class="course_sales ml-auto"><span>352</span> Sales</div> -->
+						</div>
+						<div class="d-flex justify-content-center">
+							<a href="donate.php" class=" donate-preview_item-btn">Donate Fund</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row my-5 d-flex justify-content-center align-items-center">
+		<div class="about-quote-btn">
+			<a href="donation-fund.php">See All</a>
+		</div>
+	</div>
+</div>
 <!-- Milestones -->
 <!-- <div class="milestones">
 	
@@ -321,7 +397,7 @@ $page_title = 'Home'; // Set the page title
 						<!-- Video poster image artist: https://unsplash.com/@annademy -->
 						<!-- <video id="vid1" class="video-js vjs-default-skin" controls data-setup='{ "poster": "images/video.jpg", "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=wShlz3zKWHo"}], "youtube": { "iv_load_policy": 1 } }'>
 							</video> -->
-					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/7Y757eEzZlk?si=St5TWqWSxHTgD9RS" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/7Y757eEzZlk?si=St5TWqWSxHTgD9RS" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
@@ -568,8 +644,22 @@ $page_title = 'Home'; // Set the page title
 		</div>
 	</div>
 </div>
-<!-- Join -->
-<?php require './components/join-platform-text.php'; ?>
+
+<div class="container mx-auto">
+	<div class="section_title">
+		<h2 class="text-center">Our Associatives</h2>
+	</div>
+	<div class="d-flex justify-content-center gap-4 my-5 associatives">
+
+		<img src="images/islami bank img.png" alt="">
+		<img src="images/assunnah.png" alt="">
+		<img src="images/insurancep.png" alt="">
+
+	</div>
+</div>
+
+
+
 
 <!--========================================================================-->
 <!---------------------------- Your Content End Here ------------------------->

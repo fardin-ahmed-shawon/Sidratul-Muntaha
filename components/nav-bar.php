@@ -3,7 +3,7 @@
         	<div class=" container ">
         		<div class="row">
         			<div class="col">
-        				<div class="header_content d-flex flex-col align-items-center justify-content-between">
+        				<div class=" header_content d-flex flex-col align-items-center justify-content-between">
         					<div class="logo_container">
         						<a href="index.php">
         							<div class="logo_content ">
@@ -14,7 +14,7 @@
         							</div>
         						</a>
         					</div>
-        					<nav class="main_nav_container ">
+        					<nav class="main_nav_container d-flex ">
         						<ul class="main_nav">
         							<li
         								<?php
@@ -67,12 +67,15 @@
         							</li>
         						</ul>
 
-
+        						<div class="donate-btn-section d-lg-none">
+        							<a href="donate.php" class="nav-donate-btn">Donate</a>
+        						</div>
         						<!-- Hamburger -->
 
         						<div class="hamburger menu_mm">
         							<i class="fa fa-bars menu_mm" aria-hidden="true"></i>
         						</div>
+								
         					</nav>
 
         					<!-- Language Toggle -->
