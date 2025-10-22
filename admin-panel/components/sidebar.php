@@ -79,7 +79,7 @@
             <a class="nav-link" href="donation-list.php">Donation List</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="add-donation.php">Add Donation Category</a>
+            <a class="nav-link" href="donation-categories.php">Donation Categories</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="all-donation.php">All Donation </a>

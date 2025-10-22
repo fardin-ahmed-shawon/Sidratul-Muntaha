@@ -88,7 +88,7 @@
 
         						</div> -->
         						<div class="nav-zakat-btn d-none d-lg-block">
-        						<a href="zakat-calculator.php" class=" active text-decoration-none">Calculate Zakat </a>
+        						<a href="zakat-calculator.php" class=" active text-decoration-none">Pay Zakat </a>
         						</div>
         						<div class="donate-btn-section d-none d-lg-block">
         							<a href="donate.php" class="nav-donate-btn">Donate</a>

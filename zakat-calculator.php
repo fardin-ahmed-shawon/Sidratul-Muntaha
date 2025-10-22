@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['calculate_zakat'])) {
     <div class="container">
         <div class="calculator-container">
             <div class="text-center">
-                <h2 class="section_title">Calculate Your Zakat</h2>
+                <h2 class="section_title"><b>Calculate Your Zakat</b></h2>
                 <div class="currency-badge">Currency: BDT (৳)</div>
             </div>
 
@@ -213,10 +213,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['calculate_zakat'])) {
                     <li>Consult with a qualified Islamic scholar for specific rulings</li>
                 </ul>
             </div>
+            
+        </div>
+
+        <br><br>
+
+        <div class="calculator-container">
+            <div class="text-center">
+                <h2 class="section_title"><b>Pay Your Zakat</b></h2>
+                <div class="currency-badge">Currency: BDT (৳)</div>
+            </div>
+            <!-- Liabilities Section -->
+            <h3 class="section-title">Pay Your Zakat Amount</h3>
+            <div class="form-group">
+                <label for="pay_zakat_amount">Enter Amount</label>
+                <input type="number" name="pay_zakat_amount" id="pay_zakat_amount" class="form-control" step="0.01" placeholder="Enter your zakat amount">
+            </div>
             <div class="button-group" style="margin:40px 0 10px 0;">
                 <a href="" class="btn-calculate text-decoration-none text-white text-center">Pay Zakat Now</a>
             </div>
         </div>
+
     </div>
 </div>
 <div class="container mx-auto">
