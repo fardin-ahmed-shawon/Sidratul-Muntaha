@@ -119,6 +119,21 @@
 
      }
 
+     .nav-zakat-btn {
+         padding: 8px 26px;
+         border: 1px solid #06CC6B;
+         border-radius: 10px;
+          font-weight: 500;
+         text-decoration: none;
+         font-size: 12px;
+
+     }
+
+     .nav-zakat-btn a {
+         text-decoration: none;
+         color: #000;
+     }
+
      .language-toggle {
          display: flex;
          border-radius: 10px;
@@ -1312,6 +1327,250 @@
          white-space: nowrap;
      }
 
+     /* zakat calculator page start  */
+
+     .zakat-calculator {
+         background: #f8f9fa;
+         padding: 40px 0;
+     }
+
+     .calculator-container {
+         background: white;
+         border-radius: 10px;
+         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+         padding: 30px;
+         max-width: 800px;
+         margin: 0 auto;
+     }
+
+     .form-group {
+         margin-bottom: 20px;
+     }
+
+     .form-group label {
+         display: block;
+         font-weight: 600;
+         color: #333;
+         margin-bottom: 8px;
+         font-size: 14px;
+     }
+
+     .form-control {
+         width: 100%;
+         padding: 12px 15px;
+         border: 1px solid #ddd;
+         border-radius: 5px;
+         font-size: 14px;
+         transition: border-color 0.3s;
+     }
+
+     .form-control:focus {
+         outline: none;
+         border-color: #02BD61;
+         box-shadow: 0 0 0 3px rgba(2, 189, 97, 0.1);
+     }
+
+     .form-select {
+         width: 100%;
+         padding: 12px 15px;
+         border: 1px solid #ddd;
+         border-radius: 5px;
+         font-size: 14px;
+         background: white;
+         cursor: pointer;
+     }
+
+     .section-title {
+         font-size: 18px;
+         font-weight: 700;
+         color: #2c3e50;
+         margin: 25px 0 15px 0;
+         padding-bottom: 10px;
+         border-bottom: 2px solid #02BD61;
+     }
+
+     .btn-calculate {
+         background: #02BD61;
+         color: white;
+         padding: 12px 40px;
+         border: none;
+         border-radius: 5px;
+         font-size: 16px;
+         font-weight: 600;
+         cursor: pointer;
+         transition: all 0.3s;
+     }
+
+     .btn-calculate:hover {
+         background: #06CC6B;
+         transform: translateY(-2px);
+         box-shadow: 0 4px 12px rgba(2, 189, 97, 0.3);
+     }
+
+     .btn-calculate:active {
+         transform: translateY(0);
+     }
+
+     .btn-reset {
+         background: #6c757d;
+         color: white;
+         padding: 12px 40px;
+         border: none;
+         border-radius: 5px;
+         font-size: 16px;
+         font-weight: 600;
+         cursor: pointer;
+         margin-left: 10px;
+         transition: all 0.3s;
+     }
+
+     .btn-reset:hover {
+         background: #5a6268;
+         transform: translateY(-2px);
+         box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);
+     }
+
+     .button-group {
+         margin-top: 30px;
+         text-align: left;
+     }
+
+     .result-box {
+         margin-top: 30px;
+         padding: 25px;
+         border-radius: 8px;
+         background: #e8f5e9;
+         border-left: 4px solid #02BD61;
+         animation: slideInUp 0.5s ease-out;
+         scroll-margin-top: 100px;
+     }
+
+     .result-box.not-payable {
+         background: #fff3cd;
+         border-left-color: #ffc107;
+     }
+
+     @keyframes slideInUp {
+         from {
+             opacity: 0;
+             transform: translateY(30px);
+         }
+
+         to {
+             opacity: 1;
+             transform: translateY(0);
+         }
+     }
+
+     @keyframes fadeIn {
+         from {
+             opacity: 0;
+         }
+
+         to {
+             opacity: 1;
+         }
+     }
+
+     .result-title {
+         font-size: 20px;
+         font-weight: 700;
+         color: #2c3e50;
+         margin-bottom: 15px;
+         animation: fadeIn 0.6s ease-out 0.2s both;
+     }
+
+     .result-item {
+         display: flex;
+         justify-content: space-between;
+         padding: 10px 0;
+         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+         animation: fadeIn 0.6s ease-out 0.3s both;
+     }
+
+     .result-item:nth-child(3) {
+         animation-delay: 0.4s;
+     }
+
+     .result-item:nth-child(4) {
+         animation-delay: 0.5s;
+     }
+
+     .result-item:nth-child(5) {
+         animation-delay: 0.6s;
+     }
+
+     .result-item:nth-child(6) {
+         animation-delay: 0.7s;
+     }
+
+     .result-item:last-child {
+         border-bottom: none;
+         font-size: 18px;
+         font-weight: 700;
+         color: #02BD61;
+         margin-top: 10px;
+         padding-top: 15px;
+         border-top: 2px solid #02BD61;
+     }
+
+     .result-label {
+         font-weight: 600;
+     }
+
+     .result-value {
+         font-weight: 700;
+         color: #2c3e50;
+     }
+
+     .info-text {
+         font-size: 13px;
+         color: #666;
+         margin-top: 5px;
+         font-style: italic;
+     }
+
+     .currency-badge {
+         display: inline-block;
+         background: #02BD61;
+         color: white;
+         padding: 5px 15px;
+         border-radius: 20px;
+         font-size: 14px;
+         font-weight: 600;
+         margin-bottom: 20px;
+     }
+
+     /* Loading animation for button */
+     .btn-calculate.calculating {
+         pointer-events: none;
+         opacity: 0.7;
+         position: relative;
+     }
+
+     .btn-calculate.calculating:after {
+         content: '';
+         position: absolute;
+         width: 16px;
+         height: 16px;
+         top: 50%;
+         left: 50%;
+         margin-left: -8px;
+         margin-top: -8px;
+         border: 2px solid #ffffff;
+         border-radius: 50%;
+         border-top-color: transparent;
+         animation: spinner 0.6s linear infinite;
+     }
+
+     @keyframes spinner {
+         to {
+             transform: rotate(360deg);
+         }
+     }
+
+     /* zakat calculator page end */
+
      /* Footer part start   */
      .footer {
          width: 100%;
@@ -1822,7 +2081,7 @@
 
          .footer {
 
-             padding-top: 212px;
+             padding-top: 228px;
          }
 
      }

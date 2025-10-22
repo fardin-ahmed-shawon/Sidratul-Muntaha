@@ -1611,11 +1611,12 @@ margin-left: auto;
         font-size: 16px;
     }
 
-    .stat-icon {
-        width: 45px;
-        height: 45px;
-        font-size: 1.3rem;
-    }
+.stat-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 19px;
+    padding: 12px;
+}
 }
 
 @media (max-width: 768px) {
@@ -1698,6 +1699,10 @@ margin-left: auto;
   .view-donation-wrapper   .previous-table tbody td {
         padding: 10px;
     }
+    .donation-list .stat-icon {
+    width: 35px;
+    height: 36px;
+}
 }
 
 /* Donation List start  */
@@ -1753,7 +1758,6 @@ margin-left: auto;
 /* Keep all action buttons same size */
 .donation-list .action-buttons .btn {
   max-width: 90px; /* fixed button width */
-  height: 100%;
   text-align: center;
   padding: 0.45rem 0.75rem;
   border-radius: 6px;
@@ -1762,17 +1766,27 @@ margin-left: auto;
   transition: all 0.3s ease;
   white-space: nowrap;
 }
-
+.donation-list .btn-add-new {
+    max-height: 46px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
 .donation-list .action-buttons .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Equal height consistency */
-.donation-list .action-buttons .btn-info,
 .donation-list .action-buttons .btn-warning,
+.donation-list .action-buttons .btn-info,
 .donation-list .action-buttons .btn-danger {
-  
+ height: 36px;
 }
 .donation-list .badge {
     padding: 0.45rem 0.7rem;
@@ -1923,4 +1937,27 @@ margin-left: auto;
     }
 }
 
+@media(max-width:640px){
+    .all-notice .page-header button {
+    margin-left: 0;
+}
+}
+@media (max-width:460px){
+.breadcrumb .breadcrumb-item {
+    font-size: 11px;
+}
+h1 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.donation-list .btn-add-new {
+    font-size: 14px;
+}
+.stat-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    padding: 12px;
+}
+}
 </style>

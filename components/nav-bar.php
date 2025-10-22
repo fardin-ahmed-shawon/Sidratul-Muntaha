@@ -65,7 +65,9 @@
 										?>>
         								<a href="notice.php">Notice</a>
         							</li>
+
         						</ul>
+
 
         						<div class="donate-btn-section d-lg-none">
         							<a href="donate.php" class="nav-donate-btn">Donate</a>
@@ -85,7 +87,9 @@
         							<button id="lang-toggle" class="lang-btn active border-0" data-lang="bn">বাংলা</button>
 
         						</div> -->
-
+        						<div class="nav-zakat-btn d-none d-lg-block">
+        						<a href="zakat-calculator.php" class=" active text-decoration-none">Calculate Zakat </a>
+        						</div>
         						<div class="donate-btn-section d-none d-lg-block">
         							<a href="donate.php" class="nav-donate-btn">Donate</a>
         						</div>

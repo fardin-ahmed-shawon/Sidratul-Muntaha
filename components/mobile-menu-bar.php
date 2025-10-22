@@ -33,7 +33,8 @@
     			<li class="menu_mm"><a href="contact.php">Contact</a></li>
     			<li class="menu_mm"><a href="notice.php">Notice</a></li>
     			<li class="menu_mm"><a href="donate.php">Donate</a></li>
-    			<li class="menu_mm"><a href="donate.php">
+    			<li class="menu_mm"><a href="zakat-calculator.php">Zakat</a></li>
+    			
 
     				</a></li>
 

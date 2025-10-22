@@ -87,12 +87,19 @@
         </ul>
       </div>
     </li>
+        <li class="nav-item">
+      <a class="nav-link" href="zakat-collection.php">
+        <span class="menu-title">Zakat Collection</span>
+        <i class="mdi mdi-clipboard-outline menu-icon"></i>
+      </a>
+    </li>
     <li class="nav-item">
       <a class="nav-link" href="settings.php">
         <span class="menu-title">Settings</span>
         <i class="mdi mdi-cog menu-icon"></i>
       </a>
     </li>
+
 
     <li class="nav-item">
       <a class="nav-link" href="logout.php">

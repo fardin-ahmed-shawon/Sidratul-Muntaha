@@ -1,6 +1,6 @@
 <?php
 $current_page = basename($_SERVER['PHP_SELF']); // Get the current page name
-$page_title = 'Contact'; // Set the page title
+$page_title = 'Notice Details'; // Set the page title
 ?>
 <?php require './components/header.php'; ?>
 <style>

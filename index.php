@@ -254,7 +254,7 @@ $page_title = 'Home'; // Set the page title
 <!-- Donation Category  -->
 <div class="container mx-auto mb-5">
 	<div class="section_title text-center pb-5">
-		<h2>Donation Fund</h2>
+		<h2>Our Major Donate Fund</h2>
 	</div>
 	<div
 		data-aos="fade-up"
@@ -263,10 +263,10 @@ $page_title = 'Home'; // Set the page title
 		<div class="col-sm-6 col-md-6 col-lg-4">
 			<div class="donate-preview_item">
 				<div class="course">
-					<div class="course_image"><a href="donate.php"><img src="images/regular donation.jpg" alt="" class="w-100"></a></div>
+					<div class="course_image"><a href="donate.php"><img src="images/hospital.jpg" alt="" class="w-100"></a></div>
 					<div class="course_body ">
 						<div class="course_title ">
-							<h3 class=""><a href="donate.php">Regular Donation Fund</a></h3>
+							<h3 class=""><a href="donate.php">Hospital Project</a></h3>
 						</div>
 						<div class="course_text text-truncated">Many people want to donate regularly but often forget to do so.From now on, bKash-Nagad App and Visa-Mastercard users can make regular donations from the As-Sunnah Foundation website by activating the automated system. On our website, you can choose from daily, or monthly donation options and select the amount. Even if you forget, the specified amount will be credited to the foundation's account at the scheduled time.
 
@@ -287,10 +287,10 @@ $page_title = 'Home'; // Set the page title
 
 			<div class="donate-preview_item">
 				<div class="course">
-					<div class="course_image"><a href="donate.php"><img src="images/tree-plantation.jpg" alt="" class="w-100"></a></div>
+					<div class="course_image"><a href="donate.php"><img src="images/mosque.jpg" alt="" class="w-100"></a></div>
 					<div class="course_body ">
 						<div class="course_title ">
-							<h3 class=""><a href="donate.php">General Fund</a></h3>
+							<h3 class=""><a href="donate.php">Mosque Project</a></h3>
 						</div>
 						<div class="course_text text-truncated">Many people want to donate regularly but often forget to do so.From now on, bKash-Nagad App and Visa-Mastercard users can make regular donations from the As-Sunnah Foundation website by activating the automated system. On our website, you can choose from daily, or monthly donation options and select the amount. Even if you forget, the specified amount will be credited to the foundation's account at the scheduled time.
 
@@ -311,10 +311,10 @@ $page_title = 'Home'; // Set the page title
 
 			<div class="donate-preview_item">
 				<div class="course">
-					<div class="course_image"><a href="donate.php"><img src="images/sadaqah.jpg" alt="" class="w-100"></a></div>
+					<div class="course_image"><a href="donate.php"><img src="images/school.jpg" alt="" class="w-100 h-100"></a></div>
 					<div class="course_body ">
 						<div class="course_title ">
-							<h3 class=""><a href="donate.php">Sadaquah Jariyah</a></h3>
+							<h3 class=""><a href="donate.php">School Project</a></h3>
 						</div>
 						<div class="course_text text-truncated">Many people want to donate regularly but often forget to do so.From now on, bKash-Nagad App and Visa-Mastercard users can make regular donations from the As-Sunnah Foundation website by activating the automated system. On our website, you can choose from daily, or monthly donation options and select the amount. Even if you forget, the specified amount will be credited to the foundation's account at the scheduled time.
 
