@@ -40,21 +40,14 @@
 										?>>
         								<a href="activities.php">Activities</a>
         							</li>
-        							<li
-        								<?php
-										if ($current_page == 'gallery.php') {
-											echo 'class="active"';
-										}
-										?>>
-        								<a href="gallery.php">Gallery</a>
-        							</li>
+
         							<li
         								<?php
 										if ($current_page == 'contact.php') {
 											echo 'class="active"';
 										}
 										?>>
-        								<a href="contact.php">Contact With Us</a>
+        								<a href="contact.php">Contact</a>
         							</li>
 
         							<li
@@ -87,8 +80,9 @@
         							<button id="lang-toggle" class="lang-btn active border-0" data-lang="bn">বাংলা</button>
 
         						</div> -->
-        						<div class="nav-zakat-btn d-none d-lg-block">
-        						<a href="zakat-calculator.php" class=" active text-decoration-none">Pay Zakat </a>
+
+        						<div class="nav-zakat-btn d-none d-lg-block m-2">
+        						<a href="zakat-calculator.php" class=" active text-decoration-none">Zakat Calculator </a>
         						</div>
         						<div class="donate-btn-section d-none d-lg-block">
         							<a href="donate.php" class="nav-donate-btn">Donate</a>

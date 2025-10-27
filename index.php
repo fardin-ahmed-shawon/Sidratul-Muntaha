@@ -4,50 +4,217 @@ $page_title = 'Home'; // Set the page title
 ?>
 <?php require './components/header.php'; ?>
 <style>
+	.footer {
+		width: 100%;
+		background: #0F2920;
+		color: #fff;
+		padding-top: 60px;
+		padding-bottom: 50px;
+	}
+
 	.join {
-    position: absolute;
-    top: -41%;
-    left: 0%;
-    background: transparent;
-}
-.footer {
-    width: 100%;
-    background: #0F2920;
-    color: #fff;
-    padding-top: 174px;
-    padding-bottom: 50px;
-}
+		position: absolute;
+		top: -47%;
+		left: 0;
+		right: 0;
+		background: transparent;
+	}
+
 	@media(max-width:991px) {
 		.join-input {
-    width: 58%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: none;
-    outline: none;
-    padding: 5px 20px;
-}
-.join {
-    position: absolute;
-    top: -16%;
-    left: 0%;
-    background: transparent;
-}
-	}
-	@media(max-width:575px) {
-		.home_container {
-			bottom: 145px;
+			width: 58%;
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+			border: none;
+			outline: none;
+			padding: 5px 20px;
 		}
-		.join {
-    position: absolute;
-    top: -16%;
-    left: 3%;
-    background: transparent;
-}
-.footer {
 
-    padding-top: 228px;
-    padding-bottom: 50px;
-}
+
+	}
+
+	/* Featured Banner Overlay Styles */
+	.featured_background_wrapper {
+		position: relative;
+		height: 93%;
+		min-height: 400px;
+	}
+
+	.featured_background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 93%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.featured_overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 93%;
+		background: rgba(15, 41, 32, 0.7);
+		z-index: 1;
+	}
+
+	.featured_banner_content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		text-align: center;
+		color: #fff;
+		width: 90%;
+		padding: 20px;
+	}
+
+	.featured_banner_content h1 {
+		font-size: 36px;
+		font-weight: 700;
+		margin-bottom: 20px;
+		color: #fff;
+	}
+
+	.featured_banner_content p {
+		font-size: 16px;
+		line-height: 1.6;
+		margin-bottom: 30px;
+		color: #fff;
+	}
+
+	.featured_content {
+		padding-left: 50px;
+		padding-top: 32px;
+		padding-right: 50px;
+		padding-bottom: 41px;
+		background: #f2f1f8;
+	}
+
+	.button_arrow {
+		border-radius: 0px;
+		top: 0px;
+	}
+
+	.buttons {
+		display: flex;
+		gap: 15px;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.buttons .btn {
+
+		padding: 5px 18px;
+		background: #008E48;
+		text-decoration: none;
+		color: white;
+		border-radius: 10px;
+		font-weight: 600px;
+	}
+
+	.featured_footer {
+		margin-top: 30px;
+	}
+
+	.featured_footer i {
+		font-size: 25px;
+		margin: 10px;
+	}
+
+	.featured_footer i:hover {
+		color: #008E48;
+		transition: all ease-in-out .3s;
+		cursor: pointer;
+
+	}
+
+	/* Remove the custom button styles since we're using existing .btn classes */
+
+	/* Responsive Design */
+	@media(max-width: 1199px) {
+		.featured_content {
+			padding-left: 50px;
+			padding-top: 82px;
+			padding-right: 50px;
+			padding-bottom: 41px;
+			background: #f2f1f8;
+		}
+	}
+
+	@media(max-width: 991px) {
+		.featured_background_wrapper {
+			min-height: 350px;
+		}
+
+		.featured_banner_content h1 {
+			font-size: 28px;
+		}
+
+		.featured_banner_content p {
+			font-size: 14px;
+		}
+
+		.button_arrow {
+			border-radius: 10px;
+			top: 0px;
+			right: 0px;
+			height: 100%;
+		}
+	}
+
+
+	@media(max-width: 575px) {
+		.home_slider_background {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 89%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+
+		.featured_background_wrapper {
+			min-height: 300px;
+		}
+
+		.featured_banner_content h1 {
+			font-size: 24px;
+			margin-bottom: 15px;
+		}
+
+		.featured_banner_content p {
+			font-size: 13px;
+			margin-bottom: 20px;
+		}
+
+		.buttons {
+			flex-direction: column;
+			gap: 10px;
+		}
+
+		.buttons .btn {
+			padding: 5px 18px;
+			background: #008E48;
+			text-decoration: none;
+			color: white;
+			border-radius: 10px;
+			font-weight: 600px;
+		}
+
+		.featured_banner_content {
+			top: 47%;
+		}
+
+		.home_buttons {
+			margin-top: 50px;
+		}
 	}
 </style>
 <!--=======================================================================-->
@@ -55,22 +222,93 @@ $page_title = 'Home'; // Set the page title
 <!--=======================================================================-->
 
 <!-- Home -->
-<div class=" home">
-	<div class="home-background">
-		<div class="overlay"></div>
-		<div
-		data-aos="fade-right"
-		 class="content container px-4">
-			<h1>Sidratul Muntaha Foundation</h1>
-			<p>Sidratul Muntaha Foundation is a non-political, non-profit government-registered organization dedicated to education, da'wah and total human welfare. Registration Number: S-14117/2024 .</p>
-			<div class="buttons">
-				<a href="about.php" class="btn">Know More</a>
-				<a href="activities.php" class="btn btn-outline"> Activities</a>
+<div class="home">
+	<div class="home_slider_container">
+
+		<!-- Home Slider -->
+		<div class="owl-carousel owl-theme home_slider">
+
+			<!-- Slider Item -->
+			<div class="owl-item">
+				<!-- Background image artist https://unsplash.com/@benwhitephotography -->
+				<div class="home_slider_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/Banner3.jpg);background-repeat:no-repeat;background-position:center;"></div>
+				<div class="home_container">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="home_content text-center">
+
+									<div class="home_text">
+										<div class="home_title">Mosque Project</div>
+										<div class="home_subtitle">Sidratul Muntaha Foundation is a non-political, non-profit government-registered organization dedicated to education, da'wah and total human welfare. Registration Number: .</div>
+									</div>
+									<div class="home_buttons">
+										<div class="button home_button"><a href="donate.php">Donate Now<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
+										<div class="button home_button"><a href="activities.php">All Activities<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
+
+			<!-- Slider Item -->
+			<div class="owl-item">
+				<!-- Background image artist https://unsplash.com/@benwhitephotography -->
+				<div class="home_slider_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/school.jpg);background-repeat:no-repeat;background-position:center;"></div>
+				<div class="home_container">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="home_content text-center">
+
+									<div class="home_text">
+										<div class="home_title">School Project</div>
+										<div class="home_subtitle">Sidratul Muntaha Foundation is a non-political, non-profit government-registered organization dedicated to education, da'wah and total human welfare. Registration Number: .</div>
+									</div>
+									<div class="home_buttons">
+										<div class="button home_button"><a href="donate.php">Donate Now<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
+										<div class="button home_button"><a href="activities.php">All Activities<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Slider Item -->
+			<div class="owl-item">
+				<!-- Background image artist https://unsplash.com/@benwhitephotography -->
+				<div class="home_slider_background" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/hospital.jpg)"></div>
+				<div class="home_container">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="home_content text-center">
+
+									<div class="home_text">
+										<div class="home_title">Hospital Porject</div>
+										<div class="home_subtitle">Sidratul Muntaha Foundation is a non-political, non-profit government-registered organization dedicated to education, da'wah and total human welfare. Registration Number: .</div>
+									</div>
+									<div class="home_buttons">
+										<div class="button home_button"><a href="donate.php">Donate Now<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
+										<div class="button home_button"><a href="activities.php">All Activities<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Slider Item -->
+	
+
 		</div>
 	</div>
-
 </div>
+
 
 
 <!-- Featured Course -->
@@ -79,48 +317,65 @@ $page_title = 'Home'; // Set the page title
 <!-- Courses -->
 <div class="home-page courses">
 	<div class="container">
-		<div class="row donate-form-bg mx-auto">
-			<div class="col-lg-10 offset-lg-1 ">
-				<div class="section_title text-center">
-					<h2>Make Your Donation</h2>
-				</div>
 
-			</div>
-			<div class="col">
-				<div class="">
-					<form action="#" class="mt-3 course_search_form d-flex flex-md-row gap-2 flex-column align-items-start justify-content-between">
-						<div>
-							<label class="course-lable">Donation Fund<span>*</span></label>
-							<select class="course_input" required>
-								<option value="" disabled selected class="p-2">Select Donation Category</option>
-								<option value="education">Education Support</option>
-								<option value="healthcare">Healthcare Aid</option>
-								<option value="food">Food & Nutrition</option>
-								<option value="disaster_relief">Disaster Relief</option>
-								<option value="orphan_support">Orphan Support</option>
-								<option value="mosque_fund">Mosque Fund</option>
-								<option value="environment">Environmental Projects</option>
-								<option value="other">Other</option>
-							</select>
-						</div>
 
-						<div>
-							<label class="course-lable">Mobile No. <span>*</span></label>
-							<input type="text" class="course_input " placeholder="Phone" required="required">
+
+		<!-- Featured banner -->
+
+		<div class="featured">
+			<div class="container mt-5" data-aos="fade-up">
+				<div class="row">
+					<div class="col">
+						<div class="featured_container">
+							<div class="row">
+								<div class="col-lg-6 featured_col">
+									<!-- Background image with overlay -->
+									<div class="featured_background_wrapper" style="position: relative;">
+										<div class="featured_background" style="background-image:url(images/Banner3.jpg)"></div>
+										<div class="featured_overlay"></div>
+										<div class="featured_banner_content">
+											<h1>Sidratul Muntaha Foundation</h1>
+											<p>Sidratul Muntaha Foundation is a non-political, non-profit government-registered organization dedicated to education, da'wah and total human welfare. Registration Number: S-14117/2024 .</p>
+											<div class="buttons">
+												<a href="about.php" class="btn">Know More</a>
+												<a href="activities.php" class="btn btn-outline d-none d-lg-block">Activities</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 featured_col">
+									<div class="featured_content">
+										<div class="featured_header d-flex flex-row align-items-center justify-content-start">
+										</div>
+										<div class="featured_image d-flex justify-content-center align-items-center">
+											<img src="images/sidratul logo.png" alt="sidratul logo.png" class="w-50 ">
+										</div>
+
+										<div class="featured_footer d-flex align-items-center justify-content-center ">
+											<i class="fa fa-facebook" aria-hidden="true"></i>
+											<i class="fa fa-youtube-play" aria-hidden="true"></i>
+											<i class="fa fa-instagram" aria-hidden="true"></i>
+											<i class="fa fa-twitter-square" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div>
-							<label class="course-lable">Ammount <span>*</span></label>
-							<input type="text" class="course_input" placeholder="Donation Ammount" required="required">
-						</div>
-						<div class="btn-margin"><button class="course_button "><span>Donate</span><span class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></button></div>
-					</form>
-					<div class="section_subtitle">You may receive tax relief when you donate to Sidratul Muntaha Foundation.</div>
+					</div>
 				</div>
 			</div>
 		</div>
+
+
+
 		<div class="section_title">
 			<h2 class="text-center  pt-5 pb-2 ">For Ummah, With Sunnah</h2>
 		</div>
+
+
+
+
+
 		<div
 			data-aos="fade-up"
 			class="about-quotes mb-5">
@@ -168,7 +423,7 @@ $page_title = 'Home'; // Set the page title
 				<!-- Courses Slider -->
 				<br><br><br>
 				<div class="section_title text-center">
-					<h2>Ongoing Activities</h2>
+					<h2>Activities</h2>
 				</div>
 				<div class="courses_slider_container">
 					<div class="owl-carousel owl-theme courses_slider">
@@ -254,7 +509,7 @@ $page_title = 'Home'; // Set the page title
 <!-- Donation Category  -->
 <div class="container mx-auto mb-5">
 	<div class="section_title text-center pb-5">
-		<h2>Our Major Donate Fund</h2>
+		<h2>Our Major Projects</h2>
 	</div>
 	<div
 		data-aos="fade-up"
@@ -387,263 +642,8 @@ $page_title = 'Home'; // Set the page title
 
 
 
-<!-- Video -->
-<div class="video">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<div class="video_container_outer">
-					<div class="video_container">
-						<!-- Video poster image artist: https://unsplash.com/@annademy -->
-						<!-- <video id="vid1" class="video-js vjs-default-skin" controls data-setup='{ "poster": "images/video.jpg", "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=wShlz3zKWHo"}], "youtube": { "iv_load_policy": 1 } }'>
-							</video> -->
-						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/7Y757eEzZlk?si=St5TWqWSxHTgD9RS" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Photos   -->
-<div class="photos">
-	<div class="container py-5">
-		<h1 class="text-center py-2">Photos</h1>
-		<div class="row pt-3 ">
 
-			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
-				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (7).jpeg" data-lightbox="news-gallery">
-					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (7).jpeg" alt="" class="img-fluid ">
-				</a>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
-				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (2).jpeg" data-lightbox="news-gallery">
-					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (2).jpeg" alt="" class="img-fluid ">
-				</a>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
-				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (3).jpeg" data-lightbox="news-gallery">
-					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (3).jpeg" alt="" class="img-fluid ">
-				</a>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
-				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (4).jpeg" data-lightbox="news-gallery">
-					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (4).jpeg" alt="" class="img-fluid ">
-				</a>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
-				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (5).jpeg" data-lightbox="news-gallery">
-					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (5).jpeg" alt="" class="img-fluid ">
-				</a>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-4 image-alignment">
-				<a href="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (8).jpeg" data-lightbox="news-gallery">
-					<img src="images/WhatsApp Image 2025-09-26 at 2.28.54 AM (8).jpeg" alt="images/whats" class="img-fluid ">
-				</a>
-			</div>
-		</div>
-		<div class="d-flex justify-content-center mt-4">
-			<button class="course_button "><a href="gallery.php"><span>See More</span><span class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a></button>
-		</div>
-	</div>
-</div>
-<!-- Sections -->
-<div class="grouped_sections">
-	<div class="container">
-		<div class="row">
 
-			<!-- Why Choose Us -->
-
-			<div class="col-lg-4 grouped_col">
-				<div class="grouped_title">Why Choose Us?</div>
-				<div class="accordions">
-					<div class="accordion_container">
-						<div class="accordion d-flex flex-row align-items-center active">
-							<div>Mauris vehicula nisi congue?</div>
-						</div>
-						<div class="accordion_panel">
-							<div>
-								<p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="accordion_container">
-						<div class="accordion d-flex flex-row align-items-center">
-							<div>Vehicula nisi congue, blandit?</div>
-						</div>
-						<div class="accordion_panel">
-							<div>
-								<p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="accordion_container">
-						<div class="accordion d-flex flex-row align-items-center">
-							<div>Mauris vehicula nisi congue?</div>
-						</div>
-						<div class="accordion_panel">
-							<div>
-								<p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="accordion_container">
-						<div class="accordion d-flex flex-row align-items-center">
-							<div>Nisi congue, blandit purus sed?</div>
-						</div>
-						<div class="accordion_panel">
-							<div>
-								<p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-
-			<!-- Notices -->
-
-			<div class="col-lg-4 grouped_col">
-				<div class="grouped_title">Latest Notices</div>
-				<div class="events">
-
-					<!-- Notice -->
-					<div class="event d-flex flex-row align-items-start justify-content-start">
-						<div>
-							<div class="event_date d-flex flex-column align-items-center justify-content-center">
-								<div class="event_day">20</div>
-								<div class="event_month">April</div>
-							</div>
-						</div>
-						<div class="event_body">
-							<div class="event_title"><a href="notice-details.php">New Marketing Course Release</a></div>
-							<div class="event_subtitle">Location: Online Platform</div>
-						</div>
-					</div>
-
-					<!-- Notice -->
-					<div class="event d-flex flex-row align-items-start justify-content-start">
-						<div>
-							<div class="event_date d-flex flex-column align-items-center justify-content-center">
-								<div class="event_day">23</div>
-								<div class="event_month">April</div>
-							</div>
-						</div>
-						<div class="event_body">
-							<div class="event_title"><a href="notice-details.php">Students Art Workshop</a></div>
-							<div class="event_subtitle">Location: Online Platform</div>
-						</div>
-					</div>
-
-					<!-- Notice -->
-					<div class="event d-flex flex-row align-items-start justify-content-start">
-						<div>
-							<div class="event_date d-flex flex-column align-items-center justify-content-center">
-								<div class="event_day">25</div>
-								<div class="event_month">April</div>
-							</div>
-						</div>
-						<div class="event_body">
-							<div class="event_title"><a href="notice-details.php">Launch Party for a new Platform</a></div>
-							<div class="event_subtitle">Location: Online Platform</div>
-						</div>
-					</div>
-
-					<!-- Notice -->
-					<div class="event d-flex flex-row align-items-start justify-content-start">
-						<div>
-							<div class="event_date d-flex flex-column align-items-center justify-content-center">
-								<div class="event_day">27</div>
-								<div class="event_month">April</div>
-							</div>
-						</div>
-						<div class="event_body">
-							<div class="event_title"><a href="notice-details.php">New Marketing Course</a></div>
-							<div class="event_subtitle">Location: Online Platform</div>
-						</div>
-					</div>
-
-					<!-- Notice -->
-					<div class="event d-flex flex-row align-items-start justify-content-start">
-						<div>
-							<div class="event_date d-flex flex-column align-items-center justify-content-center">
-								<div class="event_day">29</div>
-								<div class="event_month">April</div>
-							</div>
-						</div>
-						<div class="event_body">
-							<div class="event_title"><a href="notice-details.php">New Marketing Course</a></div>
-							<div class="event_subtitle">Location: Online Platform</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-			<!-- Activities -->
-
-			<div class="col-lg-4 grouped_col">
-				<div class="grouped_title">Upcoming Activities</div>
-				<div class="news">
-
-					<!-- Activity -->
-					<div class="news_post d-flex flex-row align-items-start justify-content-start">
-						<div>
-							<div class="news_post_image"><img src="images/news_1.jpg" alt="https://unsplash.com/@beccatapert"></div>
-						</div>
-						<div class="news_post_body">
-							<div class="news_post_date">April 02, 2018</div>
-							<div class="news_post_title"><a href="activities-details.php">Why Choose online education?</a></div>
-							<div class="news_post_author text-elipsis">description</div>
-						</div>
-					</div>
-
-					<!-- News Post -->
-					<div class="news_post d-flex flex-row align-items-start justify-content-start">
-						<div>
-							<div class="news_post_image"><img src="images/news_2.jpg" alt="https://unsplash.com/@nbb_photos"></div>
-						</div>
-						<div class="news_post_body">
-							<div class="news_post_date">April 02, 2018</div>
-							<div class="news_post_title"><a href="activities-details.php">Why Choose online education?</a></div>
-							<div class="news_post_author text-elipsis">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid veniam officia accusamus, voluptatem blanditiis eius, rerum omnis expedita minus saepe temporibus, obcaecati esse recusandae laudantium facilis dignissimos pariatur hic commodi!60
-
-							</div>
-						</div>
-					</div>
-
-					<!-- News Post -->
-					<div class="news_post d-flex flex-row align-items-start justify-content-start">
-						<div>
-							<div class="news_post_image"><img src="images/news_3.jpg" alt="https://unsplash.com/@rawpixel"></div>
-						</div>
-						<div class="news_post_body">
-							<div class="news_post_date">April 02, 2018</div>
-							<div class="news_post_title"><a href="activities-details.php">Why Choose online education?</a></div>
-							<div class="news_post_author text-elipsis">description</div>
-						</div>
-					</div>
-
-					<!-- News Post -->
-					<div class="news_post d-flex flex-row align-items-start justify-content-start">
-						<div>
-							<div class="news_post_image"><img src="images/news_4.jpg" alt="https://unsplash.com/@jtylernix"></div>
-						</div>
-						<div class="news_post_body">
-							<div class="news_post_date">April 02, 2018</div>
-							<div class="news_post_title"><a href="activities-details.php">Why Choose online education?</a></div>
-							<div class="news_post_author text-elipsis">description</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
 
 <div class="container mx-auto">
 	<div class="section_title">
@@ -664,5 +664,6 @@ $page_title = 'Home'; // Set the page title
 <!--========================================================================-->
 <!---------------------------- Your Content End Here ------------------------->
 <!--========================================================================-->
-
+<!-- Join -->
+<?php require './components/join-platform-text.php'; ?>
 <?php require './components/footer.php'; ?>
