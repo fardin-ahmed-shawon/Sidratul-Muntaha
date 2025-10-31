@@ -5,10 +5,10 @@
 <div class="menu menu_mm modern_mobile_menu">
 	<div class="menu_header d-flex align-items-center justify-content-between">
 		<a href="index.php" class="d-flex align-items-center logo_container">
-			<img src="images/sidratul logo.png" alt="Sidratul Muntaha" class="menu_logo">
-			<p class="mobile_nav_title mb-0 ms-2 fw-semibold text-dark">
+			<img src="images/sr-logo.png" alt="Sidratul Muntaha" class="menu_logo">
+			<!-- <p class="mobile_nav_title mb-0 ms-2 fw-semibold text-dark">
 				<b>Sidratul</b><br><b>Muntaha</b>
-			</p>
+			</p> -->
 		</a>
 		<div class="menu_close_container">
 			<div class="menu_close">
@@ -106,10 +106,8 @@
 		padding-bottom: 12px;
 	}
 	.menu_logo {
-		width: 75px;
-		height: 75px;
-		border-radius: 50%;
-		object-fit: cover;
+		width: 125px;
+		
 	}
 
 	/* Close Button */

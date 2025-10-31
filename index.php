@@ -174,7 +174,7 @@ $page_title = 'Home';
 	/* Modern Featured Section */
 	.modern-featured {
 		padding: 50px 0;
-		background: #f8f9fa;
+		background:rgb(248, 250, 249);
 	}
 	.unified-card {
 		background: #fff;
@@ -691,7 +691,7 @@ $page_title = 'Home';
 
 				<!-- Right Side: Logo + Socials -->
 				<div class="col-lg-6 p-5 featured-right text-center">
-					<img src="images/sidratul logo.png" alt="Logo" class="featured-logo mb-4" style="max-width:220px;">
+					<img src="images/sr-logo.png" alt="Logo" class="featured-logo mb-4" style="max-width:180px;">
 					<div class="social-icons justify-content-center">
 						<a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
 						<a href="#" class="social-icon"><i class="fa fa-youtube-play"></i></a>

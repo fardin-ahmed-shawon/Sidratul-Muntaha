@@ -29,7 +29,7 @@
         						<a href="index.php">
         							<div class="logo_content ">
         								<div class="logo_img">
-											<img src="images/sidratul logo.png" alt="sidratul logo.png">
+											<img src="images/s-icon.png" alt="sidratul logo.png">
 										</div>
         					
         							</div>
