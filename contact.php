@@ -9,7 +9,8 @@ $page_title = 'Contact'; // Set the page title
 <!--=======================================================================-->
 
     <!-- Home -->
-	<div class="home">
+<div class="contact-home">
+		<div class="home">
 		<!-- Background image artist https://unsplash.com/@thepootphotographer -->
 		<div class="home_background parallax_background parallax-window" data-parallax="scroll" data-image-src="images/contact.jpg" data-speed="0.8"></div>
 		<div class="home_container">
@@ -17,10 +18,10 @@ $page_title = 'Contact'; // Set the page title
 				<div class="row">
 					<div class="col">
 						<div class="home_content text-center">
-							<div class="home_title">Contact</div>
+							<div data-aos="fade-up" class="home_title">Contact</div>
 							<div class="breadcrumbs">
 								<ul>
-									<li><a href="index.html">Home</a></li>
+									<li><a href="index.php">Home</a></li>
 									<li>Contact</li>
 								</ul>
 							</div>
@@ -30,6 +31,7 @@ $page_title = 'Contact'; // Set the page title
 			</div>
 		</div>
 	</div>
+</div>
 
 	<!-- Contact -->
 	<div class="contact">
@@ -39,23 +41,8 @@ $page_title = 'Contact'; // Set the page title
 				<div class="col-xl-6">
 					<div class="contact_content">
 						<div class="row">
-							<div class="col-xl-6">
-								<div class="contact_about">
-									<div class="logo_container">
-										<a href="#">
-											<div class="logo_content d-flex flex-row align-items-end justify-content-start">
-												<div class="logo_img"><img src="images/logo.png" alt=""></div>
-												<div class="logo_text">learn</div>
-											</div>
-										</a>
-									</div>
-									<div class="contact_about_text">
-										<p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam. Nullam bibendum interdum dui, ac tempor lorem convallis ut. Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-6">
-								<div class="contact_info_container">
+							<div class="col-xl-12">
+								<div data-aos="fade-up" data-aos-delay="300"  class="contact_info_container">
 									<div class="contact_info_main_title">Contact Us</div>
 									<div class="contact_info">
 										<div class="contact_info_item">
@@ -70,11 +57,17 @@ $page_title = 'Contact'; // Set the page title
 											<div class="contact_info_title">Email:</div>
 											<div class="contact_info_line">yourmail@gmail.com</div>
 										</div>
+										<div class="contact-socials d-flex align-items-center ">
+											<i class="fa fa-facebook" aria-hidden="true"></i>
+											<i class="fa fa-youtube-play" aria-hidden="true"></i>
+											<i class="fa fa-instagram" aria-hidden="true"></i>
+											<i class="fa fa-twitter-square" aria-hidden="true"></i>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="contact_form_container">
+						<div data-aos="fade-up"  class="contact_form_container">
 							<form action="#" id="contact_form" class="contact_form">
 								<div>
 									<div class="row">
@@ -101,7 +94,7 @@ $page_title = 'Contact'; // Set the page title
 						<!-- Google Map -->
 						<div id="google_map" class="google_map">
 							<div class="map_container">
-								<div id="map"></div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0480549166914!2d90.3667632!3d23.7731584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf6de2c3b19b%3A0xeeef7eec6d1d012a!2sEasy%20Tech%20Solutions!5e1!3m2!1sen!2sbd!4v1759752382793!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="h-100"></iframe>
 							</div>
 						</div>
 
@@ -115,5 +108,5 @@ $page_title = 'Contact'; // Set the page title
 <!--========================================================================-->
 <!---------------------------- Your Content End Here ------------------------->
 <!--========================================================================-->
-
+<?php require './components/join-platform-text.php'; ?>
 <?php require './components/footer.php'; ?>

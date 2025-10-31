@@ -1209,12 +1209,14 @@ section
 .course_input
 {
 	position: relative;
-	width: 100%;
+	
+	width: 95%;
 	height: 50px;
 	border: none;
 	outline: none;
 	background: #f2f1f8;
 	padding-left: 22px;
+
 }
 .course_search_form > div::after
 {
