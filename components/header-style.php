@@ -1,7 +1,6 @@
  <style>
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700,800,900');
 
 /* ========================================
    TABLE OF CONTENTS
@@ -27,8 +26,7 @@
    ======================================== */
 body {
     overflow-x: hidden !important;
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Poppins", sans-serif !important;
 }
 
 ::selection {
@@ -2088,7 +2086,9 @@ border-radius: 10px;
         width: 100%;
         height: 89vh;
     }
-
+.home .slide{
+    
+}
     /* Featured Banner */
     .featured_background_wrapper {
         min-height: 300px;
