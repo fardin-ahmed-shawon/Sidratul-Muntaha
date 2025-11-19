@@ -157,7 +157,7 @@ color: white;
             <p class="fs-6 fw-bold py-2">Sidratul School Development Project is an institutional Project for self-development and skill enhancement. This affiliate of the Sidratul Foundation, registered with the National Skill Development Authority, was established in 2022. Since its inception, it has been working to bring information technology and technical education to all levels of society, with the goal of eliminating unemployment and creating employment opportunities.</p>
             <p>The specialty of this institute is that it provides computer, information technology, and various technical training courses in a completely separate environment and with suitable curricula for both men and women. There are also special scholarships for talented and underprivileged students, enabling them to receive training free of charge.</p>
             <p>By developing skilled human resources, this institute has already started to solidify its position as an effective tool for alleviating the country's unemployment problem and fostering self-employment</p>
-            <div class="mt-5">
+            <div class="mt-4">
                 <a href="scholarship.php" class="scholarship-btn">
                     Get a Scholarship
                 </a>

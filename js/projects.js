@@ -1,6 +1,6 @@
 const projects = [
   {
-    image: "images/hospital.png",
+    image: "images/Hospital Project.jpg",
     tag: "Major Project",
     category: "major",
     title: "Hospital Project",
@@ -23,16 +23,9 @@ const projects = [
     link: "project-details.php",
     text: "Creating spiritual centers for worship, learning, and community gathering for all Muslims.",
   },
+
   {
-    image: "images/act4.webp",
-    tag: "Regular Projects",
-    category: "regular",
-    title: "Meritorious Program",
-    link: "project-details.php",
-    text: "Financial Support For Madrasha Students which are needed for poor students",
-  },
-  {
-    image: "images/act5.webp",
+    image: "images/Scholarship1.jpg",
     tag: "Regular Projects",
     category: "regular",
     title: "Educational Support Program",
@@ -40,32 +33,64 @@ const projects = [
     text: "Financial Support For Madrasha Students which are needed for poor students",
   },
   {
-    image: "images/act6.webp",
+    image: "images/New walkway.jpg",
     tag: "Social Project",
     category: "social",
-    title: "Community Welfare Program",
+    title: "Walkway Development",
     link: "project-details.php",
-    text: "Financial Support For Madrasha Students which are needed for poor students",
+    text: "Walkway Development For villagers",
+  },
+  {
+    image: "images/New walkway5.jpg",
+    tag: "Social Project",
+    category: "social",
+    title: "Pond Cleaning",
+    link: "project-details.php",
+    text: "Cleaning  Pond  For Better Environment",
+  },
+  {
+    image: "images/SocialWork10.jpg",
+    tag: "Social Project",
+    category: "social",
+    title: "Relief Distribution",
+    link: "project-details.php",
+    text: "Distributing Releif For the poor people ",
+  },
+  {
+    image: "images/SocialWork15.jpg",
+    tag: "Social Project",
+    category: "social",
+    title: "Relief Donation",
+    link: "project-details.php",
+    text: "Donating Releif to the villagers",
+  },
+  {
+    image: "images/crops aid.jpg",
+    tag: "Social Project",
+    category: "social",
+    title: "Volunteering For Crops",
+    link: "project-details.php",
+    text: "Aiding to help for cultivation of crops",
   },
 ];
 
-function renderProjects(filteredProjects) {
+function renderProjects(projectsToRender) {
   const container = document.getElementById("projectsGrid");
   if (!container) {
     console.error("projectsGrid container not found!");
     return;
   }
   
-  if (filteredProjects.length === 0) {
+  if (projectsToRender.length === 0) {
     container.innerHTML = `
       <div class="col-12 text-center py-5">
-        <p class="text-muted">No projects found in this category.</p>
+        <p class="text-muted">No projects found.</p>
       </div>
     `;
     return;
   }
   
-  container.innerHTML = filteredProjects.map(project => `
+  container.innerHTML = projectsToRender.map(project => `
     <div class="col-lg-4 col-md-6">
       <div class="course">
         <div class="course_image"><img src="${project.image}" alt="${project.title}"></div>
@@ -84,43 +109,11 @@ function renderProjects(filteredProjects) {
   `).join("");
 }
 
-function filterProjects(category, clickedButton) {
-  // Update active tab
-  const tabs = document.querySelectorAll('.tab-button');
-  tabs.forEach(tab => tab.classList.remove('active'));
-  
-  // Add active class to clicked button
-  if (clickedButton) {
-    clickedButton.classList.add('active');
-  }
-
-  // Filter and render projects
-  let filteredProjects;
-  if (category === 'all') {
-    filteredProjects = projects;
-  } else {
-    filteredProjects = projects.filter(project => project.category === category);
-  }
-  
-  console.log(`Filtering by: ${category}, Found ${filteredProjects.length} projects`);
-  renderProjects(filteredProjects);
-}
-
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
   console.log('Initializing projects page...');
   
-  // Add click event listeners to tabs
-  const tabs = document.querySelectorAll('.tab-button');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', function(e) {
-      const category = this.getAttribute('data-category');
-      console.log('Tab clicked:', category);
-      filterProjects(category, this);
-    });
-  });
-  
-  // Initial render - show all projects
+  // Render all projects
   renderProjects(projects);
-  console.log('Projects loaded successfully');
+  console.log('All projects loaded successfully');
 });
